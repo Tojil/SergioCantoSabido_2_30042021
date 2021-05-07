@@ -3,8 +3,8 @@
 @font-face {
     font-family: 'ralewaythin_italic';
     src: url('fonts/raleway-italic-variablefont_wght-webfont.woff2') format('woff2'),
-         url('fonts/raleway-italic-variablefont_wght-webfont.woff') format('woff'),
-         url('fonts/raleway-Italic-VariableFont_wght') format('truetype');
+         url('fonts/raleway-italic-variablefont_wght-webfont.woff') format('woff');
+
     font-weight: normal;
     font-style: normal;
 
@@ -13,8 +13,7 @@
 @font-face {
     font-family: 'ralewaythin';
     src: url('fonts/raleway-variablefont_wght-webfont.woff2') format('woff2'),
-         url('fonts/raleway-variablefont_wght-webfont.woff') format('woff'),
-         url('fonts/raleway-VariableFont_wght') format('truetype');
+         url('fonts/raleway-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -59,6 +58,7 @@ header
 
 .inscrire a
 {
+    font-weight: bold;
     text-decoration-line: none;
     color: #0065FC;
 }
@@ -86,6 +86,16 @@ nav a:hover
 {
     color: #0065FC;
     border-top: 3px solid #0065FC;
+}
+
+#hero
+{
+    color: #0065FC;
+}
+
+h3
+{
+    font-weight: bold;
 }
 
 @media screen and (max-width: 1024px)
