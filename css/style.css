@@ -35,7 +35,32 @@ header
 {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+}
+
+.bloc_nav
+{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
+}
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    padding-top: 16px;
+}
+
+.inscrire
+{
+    padding-top: 16px;
+}
+
+.inscrire a
+{
+    text-decoration-line: none;
+    color: #0065FC;
 }
 
 nav ul
@@ -52,7 +77,46 @@ nav li
 nav a
 {
     font-size: 1em;
-    color: #0065FC;
-    padding-bottom: 3px;
+    color: black;
+    padding-top: 25px;
     text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+}
+
+@media screen and (max-width: 1024px)
+{
+    #bloc_page
+    {
+        width: auto;
+    }
+
+    .bloc_nav
+    {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+
+    nav a:hover
+    {
+        border-bottom: 3px solid #0065fC;
+        border-top: none;
+        padding-bottom: 10px;
+    }
+
+    #hebact
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    header
+    {
+        flex-direction: row;
+    }
+
 }
