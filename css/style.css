@@ -153,44 +153,61 @@ h3
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .bloc_hebergements
 {
     display: flex;
     flex-direction: column;
-    align-items: center;
     background-color: #F2F2F2;
-    width: 868px;
+    width: 908px;
+}
+
+.bloc_1_hebergements
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card_hebergements img
+{
+    width: 230px;
+    height: 112px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 3px solid white;
+}
+
+.card_h
+{
+    height: 195px;
+    width: 235px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0.05px 0.05px 15px black;
+}
+
+.card_text p
+{
+    margin-top: -20px;
+    margin-left: 20px;
+}
+
+.card_text p
+{
+    background-color: white;
+    width: 200px;
+    
 }
 
 .bloc_populaires
 {
     background-color: #F2F2F2;
     padding: 40px;
-}
-
-
-.card_hebergements img
-{
-    width: 235px;
-    height: 112px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-.card_hebergements
-{
-    margin: 0px;
-    height: 195px;
-    width: 245px;
-}
-
-.bloc_1_hebergemnts
-{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .card_populaires img
@@ -203,17 +220,163 @@ h3
     border-bottom-left-radius: 15px;
 }
 
-.bloc_populaires
-{
-    display: flex;
-    flex-direction: column;
-    
-}
-
 .card_populaires
 {
     display: flex;
+    margin-bottom: 15px;
+}
+
+.card_p
+{
+    display: flex;
+    height: 145px;
+    width: 345px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px black;
+}
+
+.card_text_pi img
+{
+    margin-top: -15px;
+}
+
+.card_text_t
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.bloc_activites
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.bloc_marseille
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card_t_activ
+{
+    margin-left: 20px;
+    margin-top: -10px;
+    font-weight: bold;
+}
+
+.card_a
+{
+    width: 300px;
+    height: 444px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px black;
+}
+
+.card_a img
+{
+    width: 295px;
+    height: 388px;
+    border: 3px solid white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: -15px;
+   
+}
+
+.card_b
+{
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
+}
+
+.card_pomegues
+{
+    width: 300px;
+    height: 236px;
+    border-radius: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px black;
+}
+
+.card_pomegues img
+{
+    width: 295px;
+    height: 180px;
+    border: 3px solid white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: -15px;
+}
+
+.card_frioul
+{
+    width: 300px;
+    height: 166px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px black;
+}
+
+.card_frioul img
+
+{
+    width: 295px;
+    height: 110px;
+    border: 3px solid white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: -15px;
+}
+
+.card_notre_dame
+{
+    width: 300px;
+    height: 195px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px black;
+}
+
+.card_notre_dame img
+{
+    width: 295px;
+    height: 137px;
+    border: 3px solid white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: -15px;
+}
+
+.card_longchamp
+{
+    width: 300px;
+    height: 210px;
+    border-radius: 15px;
+    box-shadow: 0.5px 0.5px 15px black;
+}
+
+.card_longchamp img
+{
+    width: 295px;
+    height: 150px;
+    border: 3px solid white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: -15px;
+}
+
+footer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-right: 200px;
+    background-color: #F2F2F2;
+    margin-top: 50px;
 }
 
 @media screen and (max-width: 1024px)
@@ -254,4 +417,62 @@ h3
         width: max-content;
     }
 
+    #bloc_section
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    .bloc_1_hebergements
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        justify-content: space-evenly;
+    }
+
+    .card_p
+    {
+        width: 335px;
+        height: 145px;
+    }
+
+    .card_h
+    {
+        width: 335px;
+        height: 195px;
+    }
+
+    .card_h img
+    {
+        width: 327px;
+        height: 115px;
+    }
+
+    .bloc_marseille
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card_a, .card_pomegues, .card_frioul, .card_notre_dame, .card_longchamp
+    {
+        width: 333px;
+        height: 190px;
+        margin-top: 40px;
+    }
+
+    .card_a img, .card_pomegues img, .card_frioul img, .card_notre_dame img, .card_longchamp img
+    {
+        width: 327px;
+        height: 135px;
+    }
+
+    footer
+    {
+        display: flex;
+        flex-direction: column;
+    }
 }
