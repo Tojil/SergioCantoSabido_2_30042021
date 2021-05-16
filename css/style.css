@@ -26,7 +26,7 @@ body
 
 .bloc_page
 {
-    width: 1340px;
+    width: 1300px;
     margin: auto;
 }
 
@@ -145,7 +145,7 @@ h3
     font-weight: bold;
 }
 
-.filtres i
+.filter_list i
 {
     color: blue;
     background-color: #DEEBFF;
@@ -164,21 +164,20 @@ h3
     
 }
 
-.filtres li p
+.filter_list li p
 {
     padding-right: 15px;
     border: 3px solid #F2F2F2;
     border-radius: 20px;
-    padding-top: Opx;
 }
 
-.filtres
+.filter_list
 {
     margin-right: 15px;
 
 }
 
-#filtres
+#filter
 {
     margin: 15px;
     padding-top: 10px;
@@ -447,9 +446,9 @@ footer
 
 @media screen and (max-width: 1024px)
 {
-    #bloc_page
+    .bloc_page
     {
-        width: 768px;
+        width: 900px;
         margin: auto;
     }
 
@@ -470,48 +469,57 @@ footer
         flex-direction: column-reverse;
     }
 
+    .bloc_hebergements
+    {
+        margin: auto;
+    }
+
     .bloc_1_hebergements
     {
         display: flex;
         flex-direction: column;
-        padding: 40px;
-        justify-content: space-evenly;
     }
 
-    #card_middle, #card_1_middle
+    .bloc_populaires
     {
-        margin-top: 50px;
-        margin-bottom: 50px;
-        margin-left: 0px;
-        margin-right: Opx;
+        margin: auto;
     }
 
-    .card_p
+    .space_h
     {
-        width: 670px;
-        height: 290px;
+        height: 3em;
+    }
+
+    .space_p
+    {
+        height: 3em;
+    }
+
+    .space_act
+    {
+        height: 1em;
+    }
+
+    .card_p, .card_h
+    {
+        width: 837.5px;
+        height: 362.5px;
     }
 
     .card_populaires img
     {
-        width: 254px;
-        height: 282px;
+        width: 508px;
+        height: 354px;
     }
 
     .card_text_p
     {
         padding-left: 20px;
     }
-
-    .card_h
-    {
-        width: 670px;
-        height: 390px;
-    }
-
+    
     .card_h img
     {
-        width: 663px;
+        width: 832px;
         height: 230px;
     }
 
@@ -524,36 +532,48 @@ footer
 
     .card_a, .card_pomegues, .card_frioul, .card_notre_dame, .card_longchamp
     {
-        width: 666px;
+        width: 837.5px;
         height: 380px;
-        margin-top: 40px;
+        margin-bottom: 3em;
     }
 
     .card_a img, .card_pomegues img, .card_frioul img, .card_notre_dame img, .card_longchamp img
     {
-        width: 659px;
+        width: 832px;
         height: 270px;
+        margin: auto;
     }
 
     footer
     {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        margin: auto;
+        margin-top: 3em;
     }
 
 }
 
+
+
 @media screen and (max-width: 768px)
 {
-    #bloc_page
+    .bloc_page
     {
-        width: auto;
+        width: 650px;
+        margin: auto;
+    }
+
+    header
+    {
+        justify-content: left;
     }
 
     .bloc_nav
     {
-        flex-direction: column-reverse;
-        align-items: flex-end;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4em;
     }
 
     nav a:hover
@@ -563,60 +583,69 @@ footer
         padding-bottom: 10px;
     }
 
-    #nav_list
+    .filter_list
     {
         display: flex;
-        justify-content: center;
-    }
-
-    header
-    {
-        flex-direction: row;
-    }
-
-    .filtres
-    {
-        display: flex;
-        flex-direction: column;
-        width: max-content;
+        flex-wrap: wrap;
     }
 
     section
     {
-        display: flex;
         flex-direction: column-reverse;
-        justify-content: space-between;
+    }
+
+    .bloc_hebergements
+    {
+        margin: auto;
     }
 
     .bloc_1_hebergements
     {
         display: flex;
         flex-direction: column;
-        padding: 40px;
-        justify-content: space-evenly;
     }
 
-    #card_middle, #card_1_middle
+    .bloc_populaires
     {
-        margin: 0px;
+        margin: auto;
     }
 
-    .card_p
+    .space_h
     {
-        width: 335px;
-        height: 145px;
+        height: 3em;
     }
 
-    .card_h
+    .space_p
     {
-        width: 335px;
-        height: 195px;
+        height: 3em;
     }
 
+    .space_act
+    {
+        height: 1em;
+    }
+
+    .card_p, .card_h
+    {
+        width: 628px;
+        height: 272px;
+    }
+
+    .card_populaires img
+    {
+        width: 381px;
+        height: 265.5px;
+    }
+
+    .card_text_p
+    {
+        padding-left: 20px;
+    }
+    
     .card_h img
     {
-        width: 327px;
-        height: 115px;
+        width: 622px;
+        height: 172.5px;
     }
 
     .bloc_marseille
@@ -628,20 +657,22 @@ footer
 
     .card_a, .card_pomegues, .card_frioul, .card_notre_dame, .card_longchamp
     {
-        width: 333px;
-        height: 190px;
-        margin-top: 40px;
+        width: 628px;
+        height: 285px;
+        margin-bottom: 3em;
     }
 
     .card_a img, .card_pomegues img, .card_frioul img, .card_notre_dame img, .card_longchamp img
     {
-        width: 327px;
-        height: 135px;
+        width: 622px;
+        height: 202.5px;
+        margin: auto;
     }
 
     footer
     {
         display: flex;
         flex-direction: column;
+        padding-left: 10em;
     }
-}
+} 
