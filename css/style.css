@@ -37,11 +37,6 @@ header
     justify-content: space-between;
 }
 
-.nav_list
-{
-    margin-left: 700px;
-}
-
 .logo
 {
     padding-top: 16px;
@@ -52,11 +47,10 @@ header
     align-self: flex-end;
 }
 
-.bloc_nav
+.header_nav
 {
     display: flex;
-    justify-content: space-between;
-    margin-right: 15px;
+    justify-content: space-around;
 }
 
 .inscrire
@@ -223,10 +217,9 @@ section
     padding: 40px;
 }
 
-#card_middle, #card_1_middle
+.space_h
 {
-    margin-left: 40px;
-    margin-right: 40px;
+    width: 2em;
 }
 
 .card_hebergements img
@@ -270,14 +263,13 @@ section
 
 .bloc_populaires h3
 {
-    margin-top: -5px;
-    margin-bottom: 45px;
+    margin-top: 5px;
+    margin-bottom: 80px;
 }
 
-#card_middle_p
+.space_p
 {
-    margin-bottom: 40px;
-    margin-top: 40px;
+    height: 2em;
 }
 
 .card_populaires img
@@ -457,20 +449,13 @@ footer
 {
     #bloc_page
     {
-        width: 1024;
+        width: 768px;
         margin: auto;
     }
 
-    #nav_list
+    header
     {
-        display: flex;
-        justify-content: center;
-    }
-
-    .bloc_nav
-    {
-        flex-direction: column-reverse;
-        align-items: flex-end;
+        justify-content: left;
     }
 
     nav a:hover
