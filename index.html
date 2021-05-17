@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b24278cb9e.js" crossorigin="anonymous"></script>
@@ -25,22 +25,22 @@
                     <nav class="nav_list">
                         <ul>
                             <li>
-                                <p><a href="#hebergements">Hébergements</a></p>
+                                <p class="housing"><a href="#hebergements">Hébergements</a></p>
                             </li>
                             <li>
-                                <p><a href="#activites">Activités</a></p>
+                                <p class="activites"><a href="#activites">Activités</a></p>
                             </li>
 
                         </ul>
                     </nav>
                 </div>
                 <div>
-                    <p class="inscrire"><a href="inscrire">S'inscrire</a></p>
+                    <p class="register"><a href="inscrire">S'inscrire</a></p>
                 </div>
             </div>
         </header>
         <div id="bloc_hero">
-            <div id="trouvez">
+            <div>
                 <h3>
                     Trouvez votre hébergement pour des vacances de rêve
                 </h3>
@@ -48,26 +48,24 @@
                     En plein centre ville ou en pleine nature
                 </h5>
             </div>
-            <div id="form">
+            <div>
                 <form method="POST" action="traitement.php">
-                    
-                        <label for="destination" class="map">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </label>
-                        <input type="search" name="destination" id="destination" placeholder="Marseille, France"
-                            size="20" />
-                            <!-- type="submit"  à integrer quand le bouton enverra les formulaires-->
-                            <input value="Rechercher" size="12" />
-                        <label class="search">
-                            <i class="fas fa-search"></i>
-                        </label>
-                    
+                    <label for="destination" class="map">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </label>
+                    <input type="search" name="destination" id="destination" placeholder="Marseille, France"
+                        size="20" />
+                    <!-- type="submit"  à integrer quand le bouton enverra les formulaires-->
+                    <input value="Rechercher" size="12" />
+                    <label class="search">
+                        <i class="fas fa-search"></i>
+                    </label>
                 </form>
             </div>
             <nav>
                 <ul class="filter_list">
                     <li>
-                        <h4 id="filter">Filtres</h4>
+                        <h4>Filtres</h4>
                     </li>
                     <li>
                         <p>
@@ -95,19 +93,19 @@
                     </li>
                 </ul>
             </nav>
-            <div id="logements">
+            <div class="housing">
                 <p><i class="fas fa-info-circle"></i>Plus de 500 logements sont diponibles dans cette ville</p>
             </div>
         </div>
         <section>
             <!-- utiliser balise section à la place */ -->
-            <div class="bloc_hebergements">
+            <div class="bloc_housing">
 
                 <h3>Hébergements à Marseille</h3>
 
-                <div class="bloc_1_hebergements">
+                <div class="bloc_1_housing">
 
-                    <div class="card_hebergements">
+                    <div class="card_housing">
                         <a href="#">
                             <div class="card_h">
                                 <p><img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
@@ -118,8 +116,8 @@
 
                                     <p class="text_night">Nuit à partir de 25€</p>
                                     <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                            class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                            class="fas fa-star" id="grey_star_hebergements_1"></i></p>
+                                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"
+                                            id="grey_star_hebergements_1"></i></p>
                                 </div>
                             </div>
                         </a>
@@ -127,7 +125,7 @@
 
                     <div class="space_h"></div>
 
-                    <div class="card_hebergements">
+                    <div class="card_housing">
                         <a href="#">
                             <div class="card_h" id="card_1_middle">
                                 <p><img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
@@ -145,7 +143,7 @@
 
                     <div class="space_h"></div>
 
-                    <div class="card_hebergements">
+                    <div class="card_housing">
                         <a href="#">
                             <div class="card_h">
                                 <p><img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
@@ -154,16 +152,17 @@
                                     <p class="text_bold">Hôtel les mouettes</p>
                                     <p class="text_night">Nuit à partir de 76€</p>
                                     <p><i class="fas fa-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                                class="fas fa-star"></i><i class="fas fa-star" id="grey_star_seagull"></i></i></p>
+                                                class="fas fa-star"></i><i class="fas fa-star"
+                                                id="grey_star_seagull"></i></i></p>
                                 </div>
                             </div>
                         </a>
                     </div>
                 </div>
 
-                <div class="bloc_1_hebergements">
+                <div class="bloc_1_housing">
 
-                    <div class="card_hebergements">
+                    <div class="card_housing">
                         <a href="#">
                             <div class="card_h">
                                 <p><img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
@@ -181,7 +180,7 @@
 
                     <div class="space_h"></div>
 
-                    <div class="card_hebergements">
+                    <div class="card_housing">
                         <a href="#">
                             <div class="card_h" id="card_middle">
                                 <p><img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
@@ -190,8 +189,8 @@
                                     <p class="text_bold">Auberge Le Pannier</p>
                                     <p class="text_night">Nuit à partir de 23€</p>
                                     <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                            class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                            class="fas fa-star" id="grey_star_basket"></i></p>
+                                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"
+                                            id="grey_star_basket"></i></p>
                                 </div>
                             </div>
                         </a>
@@ -199,7 +198,7 @@
 
                     <div class="space_h"></div>
 
-                    <div class="card_hebergements">
+                    <div class="card_housing">
                         <a href="#">
                             <div class="card_h">
                                 <p><img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
@@ -217,12 +216,12 @@
                 </div>
             </div>
 
-            <div class="bloc_populaires">
-            <div class="popular">
-                <h3>Les plus populaires</h3>
-                <p><i class="fas fa-chart-line"></i></p>
-            </div>
-                <div class="card_populaires">
+            <div class="bloc_popular">
+                <div class="popular">
+                    <h3>Les plus populaires</h3>
+                    <p><i class="fas fa-chart-line"></i></p>
+                </div>
+                <div class="card_popular">
                     <a href="#">
                         <div class="card_p">
                             <div class="card_text_pi">
@@ -231,8 +230,8 @@
                                 </p>
                             </div>
                             <div class="card_text_p">
-                                <p  class="text_bold">Hôtel Le soleil du<br />matin</p>
-                                    <p class="text_night">Nuit à partir de 128€</p>
+                                <p class="text_bold">Hôtel Le soleil du<br />matin</p>
+                                <p class="text_night">Nuit à partir de 128€</p>
                                 <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                                         class="fas fa-star"></i><i class="fas fa-star"></i></p>
                             </div>
@@ -242,7 +241,7 @@
 
                 <div class="space_p"></div>
 
-                <div class="card_populaires">
+                <div class="card_popular">
                     <a href="#">
                         <div class="card_p" id="card_middle_p">
                             <div class="card_text_pi">
@@ -264,7 +263,7 @@
 
                 <div class="space_p"></div>
 
-                <div class="card_populaires">
+                <div class="card_popular">
                     <a href="#">
                         <div class="card_p">
                             <div class="card_text_pi">
@@ -276,7 +275,8 @@
                             <div class="card_text_p">
                                 <p class="text_bold">Hôtel Tout bleu et
                                     <br />
-                                    Blanc</p>
+                                    Blanc
+                                </p>
                                 <p class="text_night">Nuit à partir de 128€</p>
                                 <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                                         class="fas fa-star"></i><i class="fas fa-star" id="grey_star_popular_2"></i></p>
@@ -378,12 +378,12 @@
             <p>Charte qualité</p>
             <p>Soumettre votre hôtel</p>
         </div>
-        <div class="assistance">
+        <div class="contact">
 
             <h4>Assistance</h4>
 
             <p>Centre d'aide</p>
-            <p>Nous contacter</p>
+            <p><a href="#">Nous contacter</a></p>
         </div>
     </footer>
 
