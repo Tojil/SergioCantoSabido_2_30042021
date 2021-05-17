@@ -60,6 +60,7 @@ header
 
 .inscrire a
 {
+    font-family: 'Raleway', sans-serif;
     font-weight: bold;
     text-decoration-line: none;
     color: #0065FC;
@@ -90,16 +91,10 @@ nav a:hover
     border-top: 3px solid #0065FC;
 }
 
-#bloc_hero h3
-{
-    font-weight: bolder;
-}
-
 form
 {
     display: flex;
     flex-direction: row;
-    
 }
 
 form input[type="search"]
@@ -109,39 +104,50 @@ form input[type="search"]
 
 form input[placeholder="Marseille, France"]
 {
-    border-top: 3px solid #F2F2F2;
-    border-bottom: 3px solid #F2F2F2;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    border-top: 2.5px solid #F2F2F2;
+    border-bottom: 2px solid #F2F2F2;
     padding-left: 10px;
-    padding-top: 13px;
+    padding-top: 10px;
     padding-bottom: 10px;
     margin-left: -4px;
 }
 
-form label i
+form input[value="Rechercher"]
 {
-    border: 4px solid #F2F2F2;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-}
-
-label i
-{
-    background-color: #F2F2F2;
-    padding: 10px;
-}
-
-.search
-{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
     color: white;
-    padding: 10px;
-    border: 0px;
+    border: 2px solid #0065FC;
+    padding-left: 1em;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    padding-right: 0.4em;
     background-color: #0065FC;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
+.search
+{
+    display: none;
+}
+
+.map
+{
+    border: 3px solid #F2F2F2;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #F2F2F2;
+    padding: 10.5px;
+}
+
 h3
 {
+    font-family: 'Raleway', sans-serif;
     font-weight: bold;
 }
 
@@ -166,6 +172,7 @@ h3
 
 .filter_list li p
 {
+    font-family: 'Raleway', sans-serif;
     padding-right: 15px;
     border: 3px solid #F2F2F2;
     border-radius: 20px;
@@ -179,6 +186,8 @@ h3
 
 #filter
 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
     margin: 15px;
     padding-top: 10px;
 }
@@ -201,11 +210,13 @@ section
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
+    border-radius: 15px;
 }
 
 .bloc_hebergements h3
 {
-    padding-left: 40px;
+    padding-top: 1.5em;
+    padding-left: 2.2em;
 }
 
 .bloc_1_hebergements
@@ -213,7 +224,21 @@ section
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 40px;
+    padding-top: 0.5em;
+    padding-left: 2.3em;
+    padding-right: 2.3em;
+    padding-bottom: 2.3em;
+}
+
+.card_hebergements a, .card_populaires a, .bloc_marseille a
+{
+    text-decoration: none;
+    color: #0065FC;
+}
+
+#grey_star_hebergements_1, #grey_star_seagull, #grey_star_sea_1, #grey_star_sea_2, #grey_star_basket, #grey_star_popular_1, #grey_star_popular_2
+{
+    color: #d9d9d9;
 }
 
 .space_h
@@ -228,6 +253,7 @@ section
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border: 3px solid white;
+    object-fit: cover;
 }
 
 .card_h
@@ -249,21 +275,54 @@ section
 {
     background-color: white;
     width: 200px;
-    
+}
+
+.card_text
+{
+    padding: 10px;
+}
+
+.text_bold, .card_t_activ
+{
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+
+.text_night
+{
+    color: black;
 }
 
 .bloc_populaires
 {
     background-color: #F2F2F2;
-    padding: 40px;
+    padding-top: 0.5em;
+    padding-left: 2.3em;
+    padding-right: 2.3em;
+    padding-bottom: 2.3em;
     display: flex;
     flex-direction: column;
+    border-radius: 15px;
 }
 
 .bloc_populaires h3
 {
-    margin-top: 5px;
-    margin-bottom: 80px;
+    margin-top: 2.5em;
+    margin-bottom: 1.8em;
+}
+
+.popular
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.popular p
+{
+    font-size: 2em;
+    margin-left: 2em;
+    margin-top: 1em;
 }
 
 .space_p
@@ -274,11 +333,12 @@ section
 .card_populaires img
 {
     width: 128px;
-    height: 132px;
+    height: 137px;
     background-color: white;
     border: 3px solid white;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+    object-fit: cover;
 }
 
 .card_populaires
@@ -300,11 +360,6 @@ section
 .card_text_pi img
 {
     margin-top: -15px;
-}
-
-.card_text
-{
-    padding-top: 10px;
 }
 
 .bloc_activites
@@ -343,13 +398,11 @@ section
 
 .card_a img
 {
-    width: 295px;
+    width: 300px;
     height: 388px;
-    border: 3px solid white;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    margin-top: -15px;
-   
+    object-fit: cover;
 }
 
 .card_b
@@ -370,12 +423,11 @@ section
 
 .card_pomegues img
 {
-    width: 295px;
+    width: 300px;
     height: 180px;
-    border: 3px solid white;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    margin-top: -15px;
+    object-fit: cover;
 }
 
 .card_frioul
@@ -389,12 +441,11 @@ section
 .card_frioul img
 
 {
-    width: 295px;
+    width: 300px;
     height: 110px;
-    border: 3px solid white;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    margin-top: -15px;
+    object-fit: cover;
 }
 
 .card_notre_dame
@@ -407,12 +458,11 @@ section
 
 .card_notre_dame img
 {
-    width: 295px;
+    width: 300px;
     height: 137px;
-    border: 3px solid white;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    margin-top: -15px;
+    object-fit: cover;
 }
 
 .card_longchamp
@@ -425,12 +475,11 @@ section
 
 .card_longchamp img
 {
-    width: 295px;
+    width: 300px;
     height: 150px;
-    border: 3px solid white;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    margin-top: -15px;
+    object-fit: cover;
 }
 
 footer
@@ -438,7 +487,7 @@ footer
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-right: 200px;
+    margin-right: auto;
     background-color: #F2F2F2;
     margin-top: 50px;
 }
@@ -539,7 +588,7 @@ footer
 
     .card_a img, .card_pomegues img, .card_frioul img, .card_notre_dame img, .card_longchamp img
     {
-        width: 832px;
+        width: 837.5px;
         height: 270px;
         margin: auto;
     }
@@ -566,7 +615,17 @@ footer
 
     header
     {
-        justify-content: left;
+        justify-content: center;
+    }
+
+    .nav-list a
+    {
+        font-size: 2em;
+    }
+
+    #bloc_hero h3
+    {
+        font-size: 3em;
     }
 
     .bloc_nav
@@ -581,6 +640,25 @@ footer
         border-bottom: 3px solid #0065fC;
         border-top: none;
         padding-bottom: 10px;
+    }
+
+    form input[value="Rechercher"]
+    {
+        display: none;
+    }
+
+    form .search
+    {
+        background-color: #0065FC;
+    }
+    .search
+    {
+        display:initial;
+        color: white;
+        background-color: #0065FC;
+        border-radius: 10px;
+        padding: 1em;
+        margin-left: -0.5em;
     }
 
     .filter_list
@@ -664,7 +742,7 @@ footer
 
     .card_a img, .card_pomegues img, .card_frioul img, .card_notre_dame img, .card_longchamp img
     {
-        width: 622px;
+        width: 628px;
         height: 202.5px;
         margin: auto;
     }

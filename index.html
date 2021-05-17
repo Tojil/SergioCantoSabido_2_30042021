@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b24278cb9e.js" crossorigin="anonymous"></script>
@@ -47,25 +50,24 @@
             </div>
             <div id="form">
                 <form method="POST" action="traitement.php">
-                    <p>
-                        <label for="destination">
+                    
+                        <label for="destination" class="map">
                             <i class="fas fa-map-marker-alt"></i>
                         </label>
                         <input type="search" name="destination" id="destination" placeholder="Marseille, France"
                             size="20" />
-                    </p>
-                    <!-- <input type="submit" value="Rechercher" à integrer quand le bouton recherche seras foctionel> -->
-                    <p class="search">Rechercher</p>
+                            <!-- type="submit"  à integrer quand le bouton enverra les formulaires-->
+                            <input value="Rechercher" size="12" />
+                        <label class="search">
+                            <i class="fas fa-search"></i>
+                        </label>
+                    
                 </form>
-            </div>
-            <div id="champ_remplissage">
-
-                <!-- image + champ de remplissage + bouton */ -->
             </div>
             <nav>
                 <ul class="filter_list">
                     <li>
-                        <p id="filter">Filtres</p>
+                        <h4 id="filter">Filtres</h4>
                     </li>
                     <li>
                         <p>
@@ -100,10 +102,9 @@
         <section>
             <!-- utiliser balise section à la place */ -->
             <div class="bloc_hebergements">
-                <p id="hebergements">
 
-                </p>
                 <h3>Hébergements à Marseille</h3>
+
                 <div class="bloc_1_hebergements">
 
                     <div class="card_hebergements">
@@ -113,12 +114,12 @@
                                         alt="Photo Chambre lits superposés" />
                                 <p>
                                 <div class="card_text">
-                                    <p>Auberge la Cannebière</p>
+                                    <p class="text_bold">Auberge la Cannebière</p>
 
-                                    <p>Nuit à partir de 25€</p>
+                                    <p class="text_night">Nuit à partir de 25€</p>
                                     <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                            class="fas fa-star"></i></p>
+                                            class="fas fa-star" id="grey_star_hebergements_1"></i></p>
                                 </div>
                             </div>
                         </a>
@@ -132,8 +133,8 @@
                                 <p><img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                                         alt="Chambre deux mits séparés" /></p>
                                 <div class="card_text">
-                                    <p>Hôtel du port</p>
-                                    <p>Nuit à partir de 52€</p>
+                                    <p class="text_bold">Hôtel du port</p>
+                                    <p class="text_night">Nuit à partir de 52€</p>
                                     <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i></p>
@@ -150,10 +151,10 @@
                                 <p><img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                                         alt="Chambre lit seul" /></p>
                                 <div class="card_text">
-                                    <p>Hôtel les mouettes</p>
-                                    <p>Nuit à partir de 76€</p>
+                                    <p class="text_bold">Hôtel les mouettes</p>
+                                    <p class="text_night">Nuit à partir de 76€</p>
                                     <p><i class="fas fa-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                                class="fas fa-star"></i><i class="fas fa-star"></i></i></p>
+                                                class="fas fa-star"></i><i class="fas fa-star" id="grey_star_seagull"></i></i></p>
                                 </div>
                             </div>
                         </a>
@@ -168,11 +169,11 @@
                                 <p><img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                                         alt="Chambre grand lit" /></p>
                                 <div class="card_text">
-                                    <P>Hôtel de la mer</p>
-                                    <p>Nuit à partir de 46€</p>
+                                    <P class="text_bold">Hôtel de la mer</p>
+                                    <p class="text_night">Nuit à partir de 46€</p>
                                     <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                            class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                            class="fas fa-star"></i></p>
+                                            class="fas fa-star"></i><i class="fas fa-star" id="grey_star_sea_1"></i><i
+                                            class="fas fa-star" id="grey_star_sea_2"></i></p>
                                 </div>
                             </div>
                         </a>
@@ -186,11 +187,11 @@
                                 <p><img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                                         alt="Chambre 2 fois lits superposés" /></p>
                                 <div class="card_text">
-                                    <p>Auberge Le Pannier</p>
-                                    <p>Nuit à partir de 23€</p>
+                                    <p class="text_bold">Auberge Le Pannier</p>
+                                    <p class="text_night">Nuit à partir de 23€</p>
                                     <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                            class="fas fa-star"></i></p>
+                                            class="fas fa-star" id="grey_star_basket"></i></p>
                                 </div>
                             </div>
                         </a>
@@ -205,10 +206,8 @@
                                         alt="Chambre deux lis séparés" />
                                 </p>
                                 <div class="card_text">
-                                    <p>Hôtel chez Amina
-                                        <br />
-                                        Nuit à partir de 76€
-                                    </p>
+                                    <p class="text_bold">Hôtel chez Amina</p>
+                                    <p class="text_night">Nuit à partir de 76€</p>
                                     <p><i class="fas fa-star"><i class="fas fa-star"></i><i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i><i class="fas fa-star"></i></i></p>
                                 </div>
@@ -219,9 +218,10 @@
             </div>
 
             <div class="bloc_populaires">
-
+            <div class="popular">
                 <h3>Les plus populaires</h3>
-
+                <p><i class="fas fa-chart-line"></i></p>
+            </div>
                 <div class="card_populaires">
                     <a href="#">
                         <div class="card_p">
@@ -231,9 +231,8 @@
                                 </p>
                             </div>
                             <div class="card_text_p">
-                                <p>Hôtel Le soleil du<br />matin
-                                    <br />Nuit à partir de 128€
-                                </p>
+                                <p  class="text_bold">Hôtel Le soleil du<br />matin</p>
+                                    <p class="text_night">Nuit à partir de 128€</p>
                                 <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
                                         class="fas fa-star"></i><i class="fas fa-star"></i></p>
                             </div>
@@ -252,12 +251,11 @@
                                         alt="Chambre grans lit" /></p>
                             </div>
                             <div class="card_text_p">
-                                <p>Au choeur de l'eau <br />
-                                    Chambres d'hôtes <br />
-                                    Nuit à partir de 71€
-                                </p>
+                                <p class="text_bold">Au choeur de l'eau <br />
+                                    Chambres d'hôtes </p>
+                                <p class="text_night">Nuit à partir de 71€</p>
                                 <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                        class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                        class="fas fa-star"></i><i class="fas fa-star" id="grey_star_popular_1"></i></p>
                             </div>
 
                         </div>
@@ -276,13 +274,12 @@
                                 </p>
                             </div>
                             <div class="card_text_p">
-                                <p>Hôtel Tout bleu et
+                                <p class="text_bold">Hôtel Tout bleu et
                                     <br />
-                                    Blanc
-                                </p>
-                                <p>Nuit à partir de 128€</p>
+                                    Blanc</p>
+                                <p class="text_night">Nuit à partir de 128€</p>
                                 <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                        class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                                        class="fas fa-star"></i><i class="fas fa-star" id="grey_star_popular_2"></i></p>
                             </div>
                         </div>
                     </a>
