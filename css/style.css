@@ -22,19 +22,20 @@
 body
 {
     font-family: 'ralewaythin', sans-serif;
-}
-
-.bloc_page
-{
-    width: 1300px;
     margin: auto;
+    
 }
 
 header
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.space_header
+{
+    width: 55em;
 }
 
 .logo
@@ -89,6 +90,26 @@ nav a:hover
 {
     color: #0065FC;
     border-top: 3px solid #0065FC;
+}
+
+.bloc_page
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bloc__contentFilter
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.space_filter
+{
+    width: 27em;
+    height: .1em;
 }
 
 form
@@ -181,7 +202,11 @@ h3
 .filter_list
 {
     margin-right: 15px;
+}
 
+.filter_list h4
+{
+    margin-left: -2em;
 }
 
 h4
@@ -194,15 +219,17 @@ h4
 
 .housing i
 {
-    margin-right: 15px;
+    font-size: 1.5em;
+    margin-right: .4em;
     color: #0065FC;
 }
 
 section
 {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .bloc_housing
@@ -223,6 +250,7 @@ section
 {
     padding-top: .1em;
     padding-bottom: .1em;
+    color: black;
 }
 
 .bloc_1_housing
@@ -247,9 +275,10 @@ section
     color: #d9d9d9;
 }
 
-.space_h
+.space_h, .space_p, .space_act
 {
     width: 2em;
+    height: 1.5em;
 }
 
 .card_housing img
@@ -294,11 +323,6 @@ section
     color: black;
 }
 
-.text_night
-{
-    color: black;
-}
-
 .bloc_popular
 {
     background-color: #F2F2F2;
@@ -329,11 +353,6 @@ section
     font-size: 2em;
     margin-left: 2em;
     margin-top: 1em;
-}
-
-.space_p
-{
-    height: 2em;
 }
 
 .card_popular img
@@ -372,6 +391,7 @@ section
 {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 50px;
 }
 
@@ -384,7 +404,7 @@ section
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .card_t_activ
@@ -505,17 +525,22 @@ footer
 }
 
 
-@media screen and (max-width: 1024px)
+@media screen and (max-width: 1440px)
 {
     .bloc_page
     {
-        width: 900px;
+        width: 100%;
         margin: auto;
     }
 
     header
     {
-        justify-content: left;
+        justify-content: center;
+    }
+
+    .space_header
+    {
+        width: 28em;
     }
 
     nav a:hover
@@ -523,6 +548,13 @@ footer
         border-bottom: 3px solid #0065fC;
         border-top: none;
         padding-bottom: 10px;
+    }
+
+    .bloc__contentFilter
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
     }
 
     section
@@ -589,6 +621,7 @@ footer
         display: flex;
         flex-direction: column;
         padding-left: 40px;
+        margin: auto;
     }
 
     .card_a, .card_pomegues, .card_frioul, .card_notre_dame, .card_longchamp
@@ -617,17 +650,22 @@ footer
 
 
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 1024px)
 {
-    .bloc_page
-    {
-        width: 650px;
-        margin: auto;
-    }
 
     header
     {
         justify-content: center;
+    }
+
+    .space_header
+    {
+        width: .1em;
+    }
+
+    .bloc__contentFilter
+    {
+        align-items: center;
     }
 
     .bloc_nav p
@@ -641,7 +679,7 @@ footer
         margin-left: -1em;
     }
 
-    #bloc_hero h3
+    .bloc_filter h3
     {
         font-size: 3em;
     }
@@ -649,7 +687,7 @@ footer
     .bloc_nav
     {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         margin-top: 4em;
     }
 
@@ -683,6 +721,7 @@ footer
     {
         display: flex;
         flex-wrap: wrap;
+        font-size: 2em;
     }
 
     section
@@ -771,7 +810,7 @@ footer
         flex-direction: column;
         padding-left: 3em;
         margin: auto;
-        width: 120%;
+        width: 100%;
     }
     
     footer h4

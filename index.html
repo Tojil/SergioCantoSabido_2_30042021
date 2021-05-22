@@ -20,6 +20,9 @@
         <div class="logo">
             <a><img src="images/reservia_logo.svg" alt="Logo de Reservia" /></a>
         </div>
+
+        <div class="space_header"></div>
+
         <div class="header_nav">
             <div class="bloc_nav">
                 <nav class="nav_list">
@@ -41,66 +44,70 @@
     </header>
 
     <div class="bloc_page">
+        <div class=" bloc__contentFilter">
 
-        <div id="bloc_filter">
-            <div>
-                <h3>
-                    Trouvez votre hébergement pour des vacances de rêve
-                </h3>
-                <h5>
-                    En plein centre ville ou en pleine nature
-                </h5>
-            </div>
-            <div>
-                <form method="POST" action="traitement.php">
-                    <label for="destination" class="map">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </label>
-                    <input type="search" name="destination" id="destination" placeholder="Marseille, France"
-                        size="20" />
+            <div class="bloc_filter">
+                <div>
+                    <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
+                    <h5>En plein centre ville ou en pleine nature</h5>
+                </div>
+                <div>
+                    <form method="POST" action="traitement.php">
 
-                    <!-- type="submit"  à integrer quand le bouton enverra les formulaires-->
-                    <input value="Rechercher" size="12" />
+                        <label for="destination" class="map">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </label>
 
-                    <label class="search">
-                        <i class="fas fa-search"></i>
-                    </label>
-                </form>
+                        <input type="search" name="destination" id="destination" placeholder="Marseille, France"
+                            size="20" />
+
+                        <!-- type="submit"  à integrer quand le bouton enverra les formulaires-->
+                        <input value="Rechercher" size="12" />
+
+                        <label class="search">
+                            <i class="fas fa-search"></i>
+                        </label>
+
+                    </form>
+                </div>
+                <nav>
+                    <ul class="filter_list">
+                        <li>
+                            <h4>Filtres</h4>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="fas fa-money-bill-wave"></i>
+                                <a href="#">Économiques</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="fas fa-child"></i>
+                                <a href="#">Familial</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="fas fa-heart"></i>
+                                <a href="#">Romantique</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="fas fa-dog"></i>
+                                <a href="#">Animaux autorisés</a>
+                            </p>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="housing">
+                    <p><i class="fas fa-info-circle"></i>Plus de 500 logements sont diponibles dans cette ville</p>
+                </div>
             </div>
-            <nav>
-                <ul class="filter_list">
-                    <li>
-                        <h4>Filtres</h4>
-                    </li>
-                    <li>
-                        <p>
-                            <i class="fas fa-money-bill-wave"></i>
-                            <a href="#">Économiques</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            <i class="fas fa-child"></i>
-                            <a href="#">Familial</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            <i class="fas fa-heart"></i>
-                            <a href="#">Romantique</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            <i class="fas fa-dog"></i>
-                            <a href="#">Animaux autorisés</a>
-                        </p>
-                    </li>
-                </ul>
-            </nav>
-            <div class="housing">
-                <p><i class="fas fa-info-circle"></i>Plus de 500 logements sont diponibles dans cette ville</p>
-            </div>
+
+            <div class="space_filter"></div>
+            
         </div>
 
         <section>
@@ -258,6 +265,8 @@
                 </div>
             </div>
 
+            <div class="space_act"></div>
+
             <div class="bloc_popular">
                 <div class="popular">
                     <h3>Les plus populaires</h3>
@@ -348,86 +357,90 @@
             </div>
         </section>
 
+
         <div class="bloc_activites">
 
-            <h3 id="activites">Activités à Marseille</h3>
+            <div class="activites">
 
-            <div class="bloc_marseille">
+                <h3 id="activites">Activités à Marseille</h3>
 
-                <a href="#">
-                    <div class="card_a">
-                        <p>
-                            <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-                                alt="Vieux Port" />
-                        </p>
-                        <p class="card_t_activ">Vieux Port</p>
-                    </div>
-                </a>
+                <div class="bloc_marseille">
 
-                <div class="space_act"></div>
-
-                <div class="card_b">
                     <a href="#">
-                        <div class="card_pomegues">
+                        <div class="card_a">
                             <p>
-                                <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                                    alt="Fort de Pomégues" />
+                                <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                                    alt="Vieux Port" />
                             </p>
-                            <p class="card_t_activ">Fort des Pomégues</p>
+                            <p class="card_t_activ">Vieux Port</p>
                         </div>
                     </a>
 
                     <div class="space_act"></div>
 
-                    <a href="#">
-                        <div class="card_frioul">
-                            <p>
-                                <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                                    alt="Iles du Frioul" />
-                            </p>
-                            <p class="card_t_activ">Iles du Frioul</p>
-                        </div>
-                    </a>
-                </div>
+                    <div class="card_b">
+                        <a href="#">
+                            <div class="card_pomegues">
+                                <p>
+                                    <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                                        alt="Fort de Pomégues" />
+                                </p>
+                                <p class="card_t_activ">Fort des Pomégues</p>
+                            </div>
+                        </a>
 
-                <div class="space_act"></div>
+                        <div class="space_act"></div>
 
-                <a href="#">
-                    <div class="card_a">
-                        <p>
-                            <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-                                alt="Parc National des Calanques" />
-                        </p>
-                        <p class="card_t_activ">Parc National des Calanques</p>
+                        <a href="#">
+                            <div class="card_frioul">
+                                <p>
+                                    <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                                        alt="Iles du Frioul" />
+                                </p>
+                                <p class="card_t_activ">Iles du Frioul</p>
+                            </div>
+                        </a>
                     </div>
-                </a>
 
-                <div class="space_act"></div>
+                    <div class="space_act"></div>
 
-                <div class="card_b">
                     <a href="#">
-                        <div class="card_notre_dame">
+                        <div class="card_a">
                             <p>
-                                <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                                    alt="Notre-Dame-de-la-Garde" />
+                                <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                                    alt="Parc National des Calanques" />
                             </p>
-                            <p class="card_t_activ">Notre-Dame-de-la-Garde</p>
+                            <p class="card_t_activ">Parc National des Calanques</p>
                         </div>
                     </a>
 
                     <div class="space_act"></div>
 
-                    <a href="#">
-                        <div class="card_longchamp">
-                            <p>
-                                <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                                    alt="Parc Longchamp" />
-                            </p>
-                            <p class="card_t_activ">Parc Longchamp</p>
-                        </div>
-                    </a>
-                </div>
+                    <div class="card_b">
+                        <a href="#">
+                            <div class="card_notre_dame">
+                                <p>
+                                    <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                                        alt="Notre-Dame-de-la-Garde" />
+                                </p>
+                                <p class="card_t_activ">Notre-Dame-de-la-Garde</p>
+                            </div>
+                        </a>
 
+                        <div class="space_act"></div>
+
+                        <a href="#">
+                            <div class="card_longchamp">
+                                <p>
+                                    <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                                        alt="Parc Longchamp" />
+                                </p>
+                                <p class="card_t_activ">Parc Longchamp</p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
