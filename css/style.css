@@ -40,10 +40,11 @@ header
 
 .logo
 {
-    padding-top: 16px;
+    padding-top: 1em;
+    padding-left: 2em;
 }
 
-.nav-list li p
+.nav-list
 {
     align-self: flex-end;
 }
@@ -56,7 +57,8 @@ header
 
 .register
 {
-    padding-top: 16px;
+    padding-top: 1.1em;
+    padding-right: 2em;
 }
 
 .register a
@@ -78,7 +80,7 @@ nav li
     margin-right: 15px;
 }
 
-nav a
+.nav_list a
 {
     font-size: 1em;
     color: black;
@@ -86,7 +88,7 @@ nav a
     text-decoration: none;
 }
 
-nav a:hover
+.nav_list a:hover
 {
     color: #0065FC;
     border-top: 3px solid #0065FC;
@@ -108,8 +110,20 @@ nav a:hover
 
 .space_filter
 {
-    width: 27em;
+    width: 21em;
     height: .1em;
+}
+
+.bloc_filter_list
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.filter_list
+{
+    display: flex;
+    flex-direction: row;
 }
 
 form
@@ -172,12 +186,22 @@ h3
     font-weight: bold;
 }
 
+.bloc_filter h3
+{
+    font-size: 1.8em;
+}
+
+.bloc_filter h5
+{
+    font-size: 1.5em;
+}
+
 .filter_list i
 {
     color: blue;
     background-color: #DEEBFF;
     border: 5px #DEEBFF;
-    padding: 10px;
+    padding: 20px;
     border-radius: 20px;
     margin-right: 15px;
     margin-left: -2px;
@@ -197,16 +221,31 @@ h3
     padding-right: 15px;
     border: 3px solid #F2F2F2;
     border-radius: 20px;
+
 }
 
-.filter_list
+.bloc_filter_list
 {
     margin-right: 15px;
 }
 
-.filter_list h4
+.bloc_filter_list h4
 {
+    margin-top: 1.5em;
     margin-left: -2em;
+    font-size: 1.1em;
+}
+
+.filter_list a
+{
+    font-size: 1em;
+    text-decoration: none;
+    color: black;
+}
+
+.filter_list p:hover
+{
+    background-color: #F2F2F2;
 }
 
 h4
@@ -217,11 +256,19 @@ h4
     padding-top: 10px;
 }
 
-.housing i
+.housing p
+{
+    font-size: 1.5em;
+}
+
+.icon_info i
 {
     font-size: 1.5em;
     margin-right: .4em;
-    color: #0065FC;
+    color: white;
+    background-color: #0065FC;
+    border-radius: 20px;
+    border-color: 4px solid #F2F2F2;
 }
 
 section
@@ -243,7 +290,8 @@ section
 .bloc_housing h3
 {
     padding-top: 1.5em;
-    padding-left: 2.2em;
+    padding-left: 1.5em;
+    font-size: 1.5em;
 }
 
 .text_night
@@ -304,12 +352,19 @@ section
 {
     margin-top: -20px;
     margin-left: 20px;
-}
-
-.card_text p
-{
     background-color: white;
     width: 200px;
+}
+
+.card_text_p p
+{
+    padding-left:1em;
+}
+
+.card_text_p .text_night
+{
+    margin-top: -1em;
+    margin-bottom: 1em;
 }
 
 .card_text
@@ -339,6 +394,7 @@ section
 {
     margin-top: 2.5em;
     margin-bottom: 1.8em;
+    font-size: 1.5em;
 }
 
 .popular
@@ -352,7 +408,7 @@ section
 {
     font-size: 2em;
     margin-left: 2em;
-    margin-top: 1em;
+    margin-top: 1.5em;
 }
 
 .card_popular img
@@ -397,7 +453,7 @@ section
 
 .bloc_activites h3
 {
-    padding-left: 40px;
+    font-size: 1.5em;
 }
 
 .bloc_marseille
@@ -525,7 +581,7 @@ footer
 }
 
 
-@media screen and (max-width: 1440px)
+@media screen and (max-width: 1280px)
 {
     .bloc_page
     {
@@ -540,10 +596,10 @@ footer
 
     .space_header
     {
-        width: 28em;
+        width: 32em;
     }
 
-    nav a:hover
+    .nav_list a:hover
     {
         border-bottom: 3px solid #0065fC;
         border-top: none;
@@ -620,7 +676,6 @@ footer
     {
         display: flex;
         flex-direction: column;
-        padding-left: 40px;
         margin: auto;
     }
 
@@ -650,7 +705,7 @@ footer
 
 
 
-@media screen and (max-width: 1024px)
+@media screen and (max-width: 924px)
 {
 
     header
@@ -663,9 +718,49 @@ footer
         width: .1em;
     }
 
+    .logo
+    {
+        padding-left: 1.5em;
+    }
+
     .bloc__contentFilter
     {
+        display: flex;
+        flex-direction: column;
         align-items: center;
+    }
+
+    .bloc_filter
+    {
+        padding-left: 3em;
+    }
+
+    .bloc_filter_list
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bloc_filter_list .filter_list
+    {
+        margin-left: -1.5em;
+    }
+
+    .filter_list i
+    {
+	    padding-top: 25px;
+        padding-right: 25px;
+        padding-bottom: 25px;
+    }
+
+    .filter_list_space
+    {
+        width: 2em;
+    }
+
+    .bloc_filter h3
+    {
+        font-size: 2em;
     }
 
     .bloc_nav p
@@ -679,11 +774,6 @@ footer
         margin-left: -1em;
     }
 
-    .bloc_filter h3
-    {
-        font-size: 3em;
-    }
-
     .bloc_nav
     {
         display: flex;
@@ -691,11 +781,11 @@ footer
         margin-top: 4em;
     }
 
-    nav a:hover
+    .nav_list a:hover
     {
         border-bottom: 3px solid #0065fC;
         border-top: none;
-        padding-bottom: 10px;
+        
     }
 
     form input[value="Rechercher"]
@@ -712,16 +802,44 @@ footer
         display:initial;
         color: white;
         background-color: #0065FC;
-        border-radius: 10px;
+        border-radius: 30px;
         padding: 1em;
         margin-left: -0.5em;
+    }
+
+    form input[placeholder="Marseille, France"]
+    {
+        font-size: 2em;
+    }
+
+    form label, form input
+    {
+        font-size: 1.5em;
+    }
+
+    form i
+    {
+        font-size: 1em;
+        padding: .5em;
+    }
+    
+    .bloc_filter_list h4
+    {
+        font-size: 1.5em;
+        padding-left: 1em;
     }
 
     .filter_list
     {
         display: flex;
         flex-wrap: wrap;
-        font-size: 2em;
+        font-size: 1.5em;
+        margin: auto;
+    }
+
+    .icon_info, .bloc_filter h5
+    {
+        font-size: 1.8em;
     }
 
     section
@@ -762,7 +880,7 @@ footer
 
     .card_p, .card_h
     {
-        width: 628px;
+        width: 565px;
         height: 272px;
     }
 
@@ -779,7 +897,7 @@ footer
     
     .card_h img
     {
-        width: 622px;
+        width: 560px;
         height: 172.5px;
     }
 
@@ -787,19 +905,19 @@ footer
     {
         display: flex;
         flex-direction: column;
-        padding-left: 40px;
+        
     }
 
     .card_a, .card_pomegues, .card_frioul, .card_notre_dame, .card_longchamp
     {
-        width: 628px;
+        width: 565px;
         height: 285px;
         margin-bottom: 3em;
     }
 
     .card_a img, .card_pomegues img, .card_frioul img, .card_notre_dame img, .card_longchamp img
     {
-        width: 628px;
+        width: 565px;
         height: 202.5px;
         margin: auto;
     }
@@ -818,3 +936,11 @@ footer
         margin-left: -.1em;
     }
 } 
+
+@media screen and (max-width: 425px)
+{
+    .bloc_filter
+    {
+        padding-left: .1em;
+    }
+}
