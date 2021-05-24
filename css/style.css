@@ -83,7 +83,6 @@ header
     width: 50em;
 }
 
-
 .register a
 {
     font-family: 'Raleway', sans-serif;
@@ -479,7 +478,7 @@ section
 
 .bloc_activites h3
 {
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .bloc_marseille
@@ -689,6 +688,10 @@ footer
         height: 362.5px;
     }
 
+    .card_h i
+    {
+        padding-top: -2em;
+    }
     .card_popular img
     {
         width: 357px;
@@ -705,6 +708,7 @@ footer
     {
         font-size: 2em;
         width: 20em;
+        margin-top: -1em;
     }
 
     .card_text .text_night
@@ -712,6 +716,14 @@ footer
         font-size: 1.5em;
         width: 20em;
         margin-top: -1.5em;
+        margin-bottom: .7em;
+    }
+
+    .text_night
+    {
+        padding-top: .4em;
+        padding-bottom: .4em;
+        color: black;
     }
 
     .card_t_activ
