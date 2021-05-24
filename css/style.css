@@ -317,9 +317,14 @@ section
 
 .text_night
 {
-    padding-top: .1em;
-    padding-bottom: .1em;
+    padding-top: .4em;
+    padding-bottom: .4em;
     color: black;
+}
+
+.card_text .text_bold
+{
+    margin-top: -1.5em;
 }
 
 .bloc_1_housing
@@ -379,7 +384,7 @@ section
 
 .card_text_p p
 {
-    padding-left:1em;
+    padding-left: 1em;
 }
 
 .card_text_p .text_night
