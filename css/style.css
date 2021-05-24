@@ -49,10 +49,10 @@ header
     width: 68em;
 }
 
-.logo
+.logo img
 {
+    width: 9em;
     padding-top: 1em;
-    font-size: 2em;
 }
 
 .register
@@ -254,8 +254,7 @@ h3
 
 .bloc_filter_list h4
 {
-    margin-top: 1.5em;
-    margin-left: -2em;
+    margin-top: 2em;
     font-size: 1.1em;
 }
 
@@ -291,7 +290,6 @@ h4
     color: white;
     background-color: #0065FC;
     border-radius: 20px;
-    border-color: 4px solid #F2F2F2;
 }
 
 section
@@ -644,6 +642,11 @@ footer
         margin: auto;
     }
 
+    .bloc_housing h3
+    {
+        font-size: 2em;
+    }
+
     .bloc_1_housing
     {
         display: flex;
@@ -653,6 +656,11 @@ footer
     .bloc_popular
     {
         margin: auto;
+    }
+
+    .bloc_popular h3
+    {
+        font-size: 2em;
     }
 
     .space_h
@@ -678,13 +686,34 @@ footer
 
     .card_popular img
     {
-        width: 508px;
+        width: 357px;
         height: 354px;
     }
 
     .card_text_p
     {
         padding-left: 20px;
+        font-size: 1.8em;
+    }
+
+    .card_text .text_bold
+    {
+        font-size: 2em;
+        width: 20em;
+    }
+
+    .card_text .text_night
+    {
+        font-size: 1.5em;
+        width: 20em;
+        margin-top: -1.5em;
+    }
+
+    .card_t_activ
+    {
+        font-size: 2em;
+        padding-top: .5em;
+        padding-left: .8em;
     }
     
     .card_h img
@@ -722,6 +751,17 @@ footer
         margin-top: 3em;
     }
 
+    footer h4
+    {
+        font-size: 1.5em;
+    }
+
+    footer p
+    {
+        font-size: 1.3em;
+        padding-left: .8em;
+    }
+
 }
 
 
@@ -738,14 +778,16 @@ footer
         width: 35em;
     }
 
-    .logo
+    .logo img
     {
-        padding-left: 1.5em;
+        padding-left: 2em;
+        padding-top: 3.5em;
     }
 
     .register
     {
         padding-right: 1.5em;
+        font-size: 2em;
     }
 
     .bloc_nav_space
@@ -762,43 +804,27 @@ footer
 
     .nav_list
     {
-        justify-content: space-between;
+        justify-content: center;
     }
 
-    .nav_list .housing
+    .nav_list .housing a
     {
-        margin-left: -3em;
+        padding-left: 2em;
+        padding-right: 2em;
     }
 
-    .nav_list_line 
+    .nav_list .activites a
     {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-top: -3em;
-        margin-bottom: 2em;
-        text-decoration: none;
-        
+        margin-left: -1.5em;
+        padding-left: 3em;
+        padding-right: 3.3em;
     }
 
-    .housing_line, .activites_line
+    .nav_list a:hover
     {
-        width: 21em;
-        height: 1em;
         border-bottom: 3px solid #0065FC;
-        display: none;
+        padding-bottom: 1.5em;
     }
-    
-    .header_nav:hover .housing_line 
-    {
-        display: block;
-    }
-
-    .header_nav:hover .activites_line
-    {
-        display: block;
-    }
-
 
     .bloc__contentFilter
     {
@@ -818,9 +844,20 @@ footer
         flex-direction: column;
     }
 
+    .bloc_filter_list a
+    {
+        font-size: 1.3em;
+    }
+
     .bloc_filter_list .filter_list
     {
         margin-left: -1.5em;
+    }
+
+    .bloc_filter_list h4
+    {
+        margin-left: -.8em;
+        font-size: 2em;
     }
 
     .filter_list i
@@ -828,11 +865,6 @@ footer
 	    padding-top: 25px;
         padding-right: 25px;
         padding-bottom: 25px;
-    }
-
-    .filter_list_space
-    {
-        width: 2em;
     }
 
     .bloc_filter h3
@@ -963,13 +995,32 @@ footer
 
     .card_popular img
     {
-        width: 381px;
+        width: 250px;
         height: 265.5px;
     }
 
     .card_text_p
     {
-        padding-left: 20px;
+        padding-left: .2em;
+        font-size: 1.5em;
+    }
+
+    .card_text .text_bold
+    {
+        font-size: 1.5em;
+        width: 20em;
+    }
+
+    .card_text .text_night
+    {
+        font-size: 1.3em;
+        width: 20em;
+        margin-top: -1.5em;
+    }
+
+    .card_t_activ
+    {
+        padding-top: .3em;
     }
     
     .card_h img
@@ -1011,6 +1062,13 @@ footer
     footer h4
     {
         margin-left: -.1em;
+        font-size: 2em;
+    }
+
+    footer p
+    {
+        font-size: 1.3em;
+        margin-left: -1em;
     }
 } 
 
