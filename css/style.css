@@ -29,37 +29,60 @@ body
 header
 {
     display: flex;
+    flex-direction: column;
+}
+
+.logo_register
+{
+    display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.space_header
+.header_space
 {
-    width: 55em;
+    display: none;
+}
+
+.header_space_center
+{
+    width: 68em;
 }
 
 .logo
 {
     padding-top: 1em;
-    padding-left: 2em;
-}
-
-.nav-list
-{
-    align-self: flex-end;
-}
-
-.header_nav
-{
-    display: flex;
-    justify-content: space-around;
+    font-size: 2em;
 }
 
 .register
 {
     padding-top: 1.1em;
+    font-size: 1em;
+}
+
+.bloc_nav
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav_list
+{
+    margin-top: -5.3em;
+}
+
+.housing
+{
     padding-right: 2em;
 }
+
+.bloc_nav_space
+{
+    width: 50em;
+}
+
 
 .register a
 {
@@ -594,16 +617,14 @@ footer
         justify-content: center;
     }
 
-    .space_header
+    .header_space_center
     {
-        width: 32em;
+        width: 45em;
     }
 
-    .nav_list a:hover
+    .bloc_nav_space
     {
-        border-bottom: 3px solid #0065fC;
-        border-top: none;
-        padding-bottom: 10px;
+        width: 25em;
     }
 
     .bloc__contentFilter
@@ -704,7 +725,6 @@ footer
 }
 
 
-
 @media screen and (max-width: 924px)
 {
 
@@ -713,15 +733,72 @@ footer
         justify-content: center;
     }
 
-    .space_header
+    .header_space_center
     {
-        width: .1em;
+        width: 35em;
     }
 
     .logo
     {
         padding-left: 1.5em;
     }
+
+    .register
+    {
+        padding-right: 1.5em;
+    }
+
+    .bloc_nav_space
+    {
+        display: none;
+    }
+
+    .header.nav
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .nav_list
+    {
+        justify-content: space-between;
+    }
+
+    .nav_list .housing
+    {
+        margin-left: -3em;
+    }
+
+    .nav_list_line 
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: -3em;
+        margin-bottom: 2em;
+        text-decoration: none;
+        
+    }
+
+    .housing_line, .activites_line
+    {
+        width: 21em;
+        height: 1em;
+        border-bottom: 3px solid #0065FC;
+        display: none;
+    }
+    
+    .header_nav:hover .housing_line 
+    {
+        display: block;
+    }
+
+    .header_nav:hover .activites_line
+    {
+        display: block;
+    }
+
 
     .bloc__contentFilter
     {
