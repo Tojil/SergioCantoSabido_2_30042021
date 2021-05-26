@@ -17,42 +17,23 @@
 <body>
 
     <header>
-        <div class="logo_register">
 
-            <div class="header_space"></div>
-
-            <div class="logo">
-                <a><img src="images/reservia_logo.png" alt="Logo de Reservia" /></a>
-            </div>
-
-            <div class="header_space_center"></div>
-
-            <div>
-                <p class="register"><a href="inscrire">S'inscrire</a></p>
-            </div>
-
-            <div class="header_space"></div>
-
-        </div>
-
-        <div class="header_nav">
-            <div class="bloc_nav">
-
-                <div class="bloc_nav_space"></div>
-
-                <nav class="nav_list">
-                    <ul>
-                        <li>
-                            <p class="housing"><a href="#hebergements">Hébergements</a></p>
-                        </li>
-                        <li>
-                            <p class="activites"><a href="#activites">Activités</a></p>
-                        </li>
-                    </ul>
-                </nav>
-                
-            </div>
-        </div>
+        <p class="Logo">
+            <a><img src="images/reservia_logo.svg" alt="Logo de Reservia" /></a>
+        </p>
+        <nav class="nav_list">
+                <ul>
+                    <li class="section_link">
+                        <a href="#hebergements">Hébergements</a>
+                    </li>
+                    <li class="section_link">
+                        <a href="#activites">Activités</a>
+                    </li>
+                    <li>
+                        <a id="register" href="inscrire">S'inscrire</a>
+                    </li>
+                </ul>
+        </nav>
     </header>
 
     <div class="bloc_page">
@@ -82,43 +63,33 @@
 
                     </form>
                 </div>
-                <nav class="bloc_filter_list">
+
+                <div class="bloc_filter_list">
                     <h4>Filtres</h4>
+                    <div class="filter_list">
+                        <p>
+                            <i class="fas fa-money-bill-wave"></i>
+                            <a href="#">Économiques</a>
+                        </p>
+                        <p>
+                            <i class="fas fa-child"></i>
+                            <a href="#">Familial</a>
+                        </p>
+                        <p>
+                            <i class="fas fa-heart"></i>
+                            <a href="#">Romantique</a>
+                        </p>
+                        <p>
+                            <i class="fas fa-dog"></i>
+                            <a href="#">Animaux autorisés</a>
+                        </p>
+                    </div>
+                </div>
 
-                    <ul class="filter_list">
-                        <li>
-                            <p>
-                                <i class="fas fa-money-bill-wave"></i>
-                                <a href="#">Économiques</a>
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <i class="fas fa-child"></i>
-                                <a href="#">Familial</a>
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <i class="fas fa-heart"></i>
-                                <a href="#">Romantique</a>
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <i class="fas fa-dog"></i>
-                                <a href="#">Animaux autorisés</a>
-                            </p>
-                        </li>
-
-                    </ul>
-                </nav>
                 <div class="icon_info">
                     <p><i class="fas fa-info-circle"></i>Plus de 500 logements sont diponibles dans cette ville</p>
                 </div>
             </div>
-
-            <div class="space_filter"></div>
 
         </div>
 
@@ -152,8 +123,6 @@
                         </a>
                     </div>
 
-                    <div class="space_h"></div>
-
                     <div class="card_housing">
                         <a href="#">
                             <div class="card_h">
@@ -175,8 +144,6 @@
                             </div>
                         </a>
                     </div>
-
-                    <div class="space_h"></div>
 
                     <div class="card_housing">
                         <a href="#">
@@ -225,8 +192,6 @@
                         </a>
                     </div>
 
-                    <div class="space_h"></div>
-
                     <div class="card_housing">
                         <a href="#">
                             <div class="card_h" id="card_middle">
@@ -248,8 +213,6 @@
                             </div>
                         </a>
                     </div>
-
-                    <div class="space_h"></div>
 
                     <div class="card_housing">
                         <a href="#">
@@ -275,8 +238,6 @@
 
                 </div>
             </div>
-
-            <div class="space_act"></div>
 
             <div class="bloc_popular">
                 <div class="popular">
@@ -309,8 +270,6 @@
                     </a>
                 </div>
 
-                <div class="space_p"></div>
-
                 <div class="card_popular">
                     <a href="#">
                         <div class="card_p" id="card_middle_p">
@@ -337,8 +296,6 @@
                     </a>
                 </div>
 
-                <div class="space_p"></div>
-
                 <div class="card_popular">
                     <a href="#">
                         <div class="card_p">
@@ -364,95 +321,80 @@
                         </div>
                     </a>
                 </div>
-
             </div>
         </section>
 
+        <section class="bloc_activites">
 
-        <div class="bloc_activites">
+            <h3 id="activites">Activités à Marseille</h3>
 
-            <div class="activites">
+            <div class="bloc_marseille">
 
-                <h3 id="activites">Activités à Marseille</h3>
+                <a href="#">
+                    <div class="card_a">
+                        <p>
+                            <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                                alt="Vieux Port" />
+                        </p>
+                        <p class="card_t_activ">Vieux Port</p>
+                    </div>
+                </a>
 
-                <div class="bloc_marseille">
-
+                <div class="card_b">
                     <a href="#">
-                        <div class="card_a">
+                        <div class="card_pomegues">
                             <p>
-                                <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-                                    alt="Vieux Port" />
+                                <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                                    alt="Fort de Pomégues" />
                             </p>
-                            <p class="card_t_activ">Vieux Port</p>
+                            <p class="card_t_activ">Fort des Pomégues</p>
                         </div>
                     </a>
 
-                    <div class="space_act"></div>
-
-                    <div class="card_b">
-                        <a href="#">
-                            <div class="card_pomegues">
-                                <p>
-                                    <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-                                        alt="Fort de Pomégues" />
-                                </p>
-                                <p class="card_t_activ">Fort des Pomégues</p>
-                            </div>
-                        </a>
-
-                        <div class="space_act"></div>
-
-                        <a href="#">
-                            <div class="card_frioul">
-                                <p>
-                                    <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
-                                        alt="Iles du Frioul" />
-                                </p>
-                                <p class="card_t_activ">Iles du Frioul</p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="space_act"></div>
-
                     <a href="#">
-                        <div class="card_a">
+                        <div class="card_frioul">
                             <p>
-                                <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-                                    alt="Parc National des Calanques" />
+                                <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                                    alt="Iles du Frioul" />
                             </p>
-                            <p class="card_t_activ">Parc National des Calanques</p>
+                            <p class="card_t_activ">Iles du Frioul</p>
+                        </div>
+                    </a>
+                </div>
+
+                <a href="#">
+                    <div class="card_a">
+                        <p>
+                            <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                                alt="Parc National des Calanques" />
+                        </p>
+                        <p class="card_t_activ">Parc National des Calanques</p>
+                    </div>
+                </a>
+
+                <div class="card_b">
+                    <a href="#">
+                        <div class="card_notre_dame">
+                            <p>
+                                <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                                    alt="Notre-Dame-de-la-Garde" />
+                            </p>
+                            <p class="card_t_activ">Notre-Dame-de-la-Garde</p>
                         </div>
                     </a>
 
-                    <div class="space_act"></div>
-
-                    <div class="card_b">
-                        <a href="#">
-                            <div class="card_notre_dame">
-                                <p>
-                                    <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-                                        alt="Notre-Dame-de-la-Garde" />
-                                </p>
-                                <p class="card_t_activ">Notre-Dame-de-la-Garde</p>
-                            </div>
-                        </a>
-
-                        <div class="space_act"></div>
-
-                        <a href="#">
-                            <div class="card_longchamp">
-                                <p>
-                                    <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                                        alt="Parc Longchamp" />
-                                </p>
-                                <p class="card_t_activ">Parc Longchamp</p>
-                            </div>
-                        </a>
-                    </div>
+                    <a href="#">
+                        <div class="card_longchamp">
+                            <p>
+                                <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                                    alt="Parc Longchamp" />
+                            </p>
+                            <p class="card_t_activ">Parc Longchamp</p>
+                        </div>
+                    </a>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
 
     <footer>
