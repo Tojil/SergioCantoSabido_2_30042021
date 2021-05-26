@@ -768,11 +768,25 @@ footer
     .section_link
     {
         margin-bottom: 1.5em;
-        padding: 1em;
         font-size: 2em;
     }
+
     header img
     {
+        margin-left: 1em;
+    }
+
+    .section_link #housing
+    {
+        padding-left: 3.5em;
+        padding-right: 1em;
+        margin-left: 5em;
+
+    }
+
+    #activites
+    {
+        padding-right: 8em;
         margin-left: 1em;
     }
 
@@ -780,7 +794,7 @@ footer
     {
         position: absolute;
         margin-top: -3.5em;
-        margin-left: -2em;
+        margin-left: -14em;
         padding-right: 1.5em;
         font-size: 2em;
     }
@@ -790,9 +804,10 @@ footer
         justify-content: center;
     }
 
-    .section_link a:hover
+    .section_link:hover
     {
         border-bottom: 3px solid #0065FC;
+        border-top: 0px;
         padding-bottom: 1.5em;
         
     }
@@ -866,7 +881,7 @@ footer
 
     .nav_list a:hover
     {
-        border-bottom: 3px solid #0065fC;
+        border-bottom: 0px solid #0065fC;
         border-top: none;
         
     }
