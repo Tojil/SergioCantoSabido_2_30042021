@@ -591,6 +591,7 @@ footer
     color: black;
 }
 
+/* responsive desktop */
 
 @media screen and (max-width: 1300px)
 {
@@ -749,6 +750,7 @@ footer
 
 }
 
+/* responsive mobile */
 
 @media screen and (max-width: 924px)
 {
