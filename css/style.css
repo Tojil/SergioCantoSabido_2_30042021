@@ -23,7 +23,6 @@ body
 {
     font-family: 'ralewaythin', sans-serif;
     margin: auto;
-    
 }
 
 header
@@ -33,50 +32,22 @@ header
     justify-content: center;
 }
 
+header img
+{
+    width: 8em;
+    padding-top: 1em;
+    font-size: 1em;
+    margin-right: 45em;
+}
+
 .nav_list
 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-right: -50em;
-    margin-top: 2em;
-}
-
-header img
-{
-    width: 9em;
-    padding-top: 1em;
-    font-size: 1em;
-    margin-left: -55em;
-}
-
-.section_link
-{
-    padding-right: 1em;
-    padding-left: 1.5em;
-    padding-top: 1em;
-    font-size: 1.1em;
-    margin-top: -1em;
-    margin-right: 2em;
-    text-decoration: none;
-
-    
-}
-
-#register
-{
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    color: #0065FC;
-    font-size: 1.2em;
-    margin-top: 1.5em;
-
-}
-
-nav ul
-{
+    margin-top: -.5em;
+    padding-top: 2em;
     list-style-type: none;
-    display: flex;
 }
 
 .nav_list a
@@ -85,12 +56,39 @@ nav ul
     color: black;
     padding-top: 20px;
     text-decoration-line: none;
+    
 }
 
-.section_link:hover
+.nav_list a
+{
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: 2.2em;
+    margin-top: -2.5em;
+}
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+.nav_list a:hover
 {
     color: #0065FC;
-    border-top: 3px solid #0065FC;
+    border-top: thick solid #0065FC;
+
+}
+
+#register
+{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: #0065FC;
+    font-size: 1.2em;
+    padding-left: 2em;
+    padding-right: 1em;
+    text-decoration: none;
 }
 
 .bloc_page
@@ -106,23 +104,20 @@ nav ul
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-left: -18em;
+    margin-left: -27em;
 }
 
-.bloc_filter_list
+.bloc__contentFilter h3
 {
-    display: flex;
-    flex-direction: row;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
 }
 
-.filter_list
+.bloc__contentFilter h5
 {
-    display: flex;
-    flex-direction: row;
-}
-.filter_list a
-{
-    margin-right: 2.5em;
+    font-size: 1em;
+    margin-top: -.7em;
 }
 
 form
@@ -161,8 +156,8 @@ form input[value="Rechercher"]
     padding-bottom: 0.4em;
     padding-right: 0.4em;
     background-color: #0065FC;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .search
@@ -179,20 +174,27 @@ form input[value="Rechercher"]
     padding: 10.5px;
 }
 
-h3
+.bloc_filter_list
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.filter_list
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.filter_list p
 {
     font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-}
-
-.bloc_filter h3
-{
-    font-size: 1.8em;
-}
-
-.bloc_filter h5
-{
-    font-size: 1.5em;
+    margin-left: 1.7em;
+    padding-right: 15px;
+    border: 3px solid #d9d9d9;
+    border-radius: 30px;
 }
 
 .filter_list i
@@ -200,38 +202,25 @@ h3
     color: blue;
     background-color: #DEEBFF;
     border: 5px #DEEBFF;
-    padding: 20px;
+    padding: 15px;
     border-radius: 20px;
-    margin-right: 15px;
+    margin-right: 10px;
     margin-left: -2px;
     height: 15px;
     width: 15px;
 }
 
-#money i
+#money
 {
-    padding-right: 15px;
-    
-}
-
-.filter_list p
-{
-    font-family: 'Raleway', sans-serif;
-    padding-right: 15px;
-    border: 3px solid #F2F2F2;
-    border-radius: 20px;
-
-}
-
-.bloc_filter_list
-{
-    margin-right: 15px;
+   padding-left: -1em;
+   border: 5px #DEEBFF;
 }
 
 .bloc_filter_list h4
 {
-    margin-top: 2em;
+    margin-top: 1.2em;
     font-size: 1.1em;
+    margin-left: -1px;
 }
 
 .filter_list a
@@ -320,6 +309,8 @@ section
     text-decoration: none;
     color: #0065FC;
 }
+
+/* Les etoiles */
 
 #grey_star_housing_1, #grey_star_seagull, #grey_star_sea_1, #grey_star_sea_2, #grey_star_basket, #grey_star_popular_1, #grey_star_popular_2
 {
@@ -593,12 +584,8 @@ footer
 
 /* responsive desktop */
 
-@media screen and (max-width: 1300px)
+@media screen and (max-width: 1280px)
 {
-    .nav_list
-    {
-        margin-left: -20em;
-    }
     header img
     {
         margin-right: 20em;
@@ -615,7 +602,7 @@ footer
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        margin-left: -8em;
+        margin-left: -2em;
     }
 
     section
@@ -754,17 +741,282 @@ footer
 
 @media screen and (max-width: 924px)
 {
+    body
+    {
+        width: 90%;
+    }
     header
     {
+        width: 100%;
         flex-direction: column;
-        justify-content: flex-start;
+    }
+
+    header img
+    {
+        position: absolute;
+        left: 2.5em;
+        width: 9em;
+        top: .5em;
+    }
+
+    #register
+    {
+        position: absolute;
+        top: 2em;
+        right: 1.5em;
+        font-size: 1.5em;
     }
 
     .nav_list
     {
-        padding-top: 30px;
-        margin-left: -53em;
-        margin-top: -2em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .section_link
+    {
+        width: 100%;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+        margin-left: auto;
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .section_link a:hover
+    {
+        border-bottom: 5px solid #0065FC;
+        border-top: 0px;
+        padding-bottom: 1.5em;
+    }
+
+    .bloc__contentFilter
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 3.7em;
+    }
+
+    .bloc__contentFilter h3
+    {
+        font-size: 2em;
+    }
+
+    form input[value="Rechercher"]
+    {
+        display: none;
+    }
+
+    form .search
+    {
+        background-color: #0065FC;
+    }
+
+    .search
+    {
+        display:initial;
+        color: white;
+        background-color: #0065FC;
+        border-radius: 30px;
+        padding: 1em;
+        margin-left: -0.5em;
+    }
+
+    form input[placeholder="Marseille, France"]
+    {
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        font-size: 2em;
+    }
+
+    form label, form input
+    {
+        font-size: 1.5em;
+    }
+
+    form i
+    {
+        font-size: 1em;
+        padding: .5em;
+    }
+    
+    .bloc_filter_list h4
+    {
+        font-size: 1.5em;
+        padding-left: .5em;
+    }
+
+    .bloc_filter_list
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter_list
+    {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.5em;
+        margin-left: -40px;
+    }
+
+    .filter_list i
+    {
+        color: blue;
+        background-color: #DEEBFF;
+        border: 5px #DEEBFF;
+        padding: 25px;
+        border-radius: 25px;
+        margin-right: 10px;
+        margin-left: -2px;
+        height: 15px;
+        width: 15px;
+    }
+
+    .filter_list p
+    {
+        font-family: 'Raleway', sans-serif;
+        margin-right: 20px;
+        padding-right: 25px;
+        padding-top: -10px;
+        padding-bottom: 2px;
+        border: 3px solid #d9d9d9;
+        border-radius: 40px;
+    }
+
+    .icon_info, .bloc_filter h5
+    {
+        font-size: 1.8em;
+    }
+
+    section
+    {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .bloc_housing
+    {
+        align-items: center;
+        background-color: transparent;
+    }
+
+    .bloc_1_housing
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .bloc_popular
+    {
+        align-items: center;
+        background-color: #F2F2F2;
+        padding-top: 0.5em;
+        
+    }
+
+    .bloc_activites h3
+    {
+        margin-left: -8em;
+    }
+
+    .card_p, .card_h
+    {
+        width: 565px;
+        height: 272px;
+    }
+
+    .card_popular img
+    {
+        width: 250px;
+        height: 265.5px;
+    }
+
+    .card_text_p
+    {
+        padding-left: .2em;
+        font-size: 1.5em;
+    }
+
+    .card_text .text_bold
+    {
+        font-size: 1.5em;
+        width: 20em;
+    }
+
+    .card_text .text_night
+    {
+        font-size: 1.3em;
+        width: 20em;
+        margin-top: -1.5em;
+    }
+
+    .card_t_activ
+    {
+        padding-top: .3em;
+    }
+    
+    .card_h img
+    {
+        width: 560px;
+        height: 172.5px;
+    }
+
+    .bloc_marseille
+    {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .card_a, .card_pomegues, .card_frioul, .card_notre_dame, .card_longchamp
+    {
+        width: 565px;
+        height: 285px;
+        margin-bottom: 3em;
+    }
+
+    .card_a img, .card_pomegues img, .card_frioul img, .card_notre_dame img, .card_longchamp img
+    {
+        width: 565px;
+        height: 202.5px;
+        margin: auto;
+    }
+
+    footer
+    {
+        display: flex;
+        flex-direction: column;
+        padding-left: 3em;
+        width: 100%;
+    }
+    
+    footer h4
+    {
+        margin-left: -.1em;
+        font-size: 2em;
+    }
+
+    footer p
+    {
+        font-size: 1.3em;
+        margin-left: -1em;
+    }
+} 
+
+/* Iphone */
+/*
+@media screen and (max-width: 480px)
+{
+    header
+    {
+        flex-direction: column;
+        justify-content: flex-start;
     }
 
     .section_link
@@ -775,7 +1027,7 @@ footer
 
     header img
     {
-        margin-left: 1em;
+        margin-right: 1em;
     }
 
     .section_link #housing
@@ -795,9 +1047,7 @@ footer
     #register
     {
         position: absolute;
-        margin-top: -3.5em;
-        margin-left: -14em;
-        padding-right: 1.5em;
+        top: 1em;
         font-size: 2em;
     }
 
@@ -1057,11 +1307,3 @@ footer
         margin-left: -1em;
     }
 } 
-
-@media screen and (max-width: 425px)
-{
-    .bloc_filter
-    {
-        padding-left: .1em;
-    }
-}
