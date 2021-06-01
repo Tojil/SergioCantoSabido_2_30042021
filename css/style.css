@@ -40,7 +40,7 @@ header img
     margin-right: 45em;
 }
 
-.nav_list
+nav
 {
     display: flex;
     flex-direction: row;
@@ -50,17 +50,11 @@ header img
     list-style-type: none;
 }
 
-.nav_list a
+nav a
 {
     font-size: 1em;
     color: black;
-    padding-top: 20px;
     text-decoration-line: none;
-    
-}
-
-.nav_list a
-{
     padding-left: 1.5em;
     padding-right: 1.5em;
     padding-top: 2.2em;
@@ -73,11 +67,10 @@ nav ul
     display: flex;
 }
 
-.nav_list a:hover
+nav a:hover
 {
     color: #0065FC;
-    border-top: thick solid #0065FC;
-
+    border-top: 5px solid #0065FC;
 }
 
 #register
@@ -743,12 +736,15 @@ footer
 {
     body
     {
-        width: 90%;
+        width: 100%;
+        margin: auto;
     }
+
     header
     {
-        width: 100%;
+        display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     header img
@@ -767,28 +763,54 @@ footer
         font-size: 1.5em;
     }
 
-    .nav_list
+    nav
+    {
+        width: 100%;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    nav a 
+    {
+        padding-bottom: 1.5em;
+    }
+
+    nav ul
     {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-start;
+        margin-left: 0px;
+        padding-left: 0px;
+        width: 100%;
     }
+
+    nav li
+    {
+        align-items: center;
+        padding-bottom: 1.5em;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+
 
     .section_link
     {
-        width: 100%;
+        width: 50%;
         margin-top: 1.5em;
         margin-bottom: 1.5em;
-        margin-left: auto;
         font-size: 2em;
         text-align: center;
     }
 
-    .section_link a:hover
+    .section_link:hover
     {
         border-bottom: 5px solid #0065FC;
-        border-top: 0px;
         padding-bottom: 1.5em;
+    }
+
+    nav a:hover
+    {
+        border-top: 0px;
     }
 
     .bloc__contentFilter
