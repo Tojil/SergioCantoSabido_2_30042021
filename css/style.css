@@ -25,6 +25,22 @@ body
     margin: auto;
 }
 
+
+html, body {
+    padding: 0;
+    margin: 0;
+     overflow: hidden;
+}
+#container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: -30px;
+    bottom: 0;	
+    padding-right: 15px;
+    overflow-y: scroll;
+}
+
 header
 {
     display: flex;
@@ -590,6 +606,7 @@ footer
 {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     margin-right: auto;
     background-color: #F2F2F2;
     margin-top: 50px;
@@ -597,10 +614,14 @@ footer
     border: 5px solid yellow;
 }
 
-.apropos, .nos_hebergements, .contact
+.apropos, .nos_hebergements
 {
-    flex-basis: 28%;
+    padding-right: 16em;
+}
 
+.contact
+{
+    padding-right: 40em;
 }
 
 footer h4
@@ -616,7 +637,7 @@ footer h4
 
 /* responsive desktop */
 
-@media screen and (max-width: 1300px)
+@media screen and (max-width: 1400px)
 {
     header img
     {
@@ -810,8 +831,12 @@ footer h4
 
 /* responsive Tablette */
 
-@media screen and (max-width: 924px)
+@media screen and (max-width: 900px)
 {
+    #overflow
+    {
+        overflow: hidden;
+    }
     body
     {
         width: 100%;
@@ -904,7 +929,7 @@ footer h4
         flex-direction: column;
         align-items: center;
         margin: auto;
-        width: 80%;
+        width: 100%;
         border: 5px solid rebeccapurple;
     }
 
@@ -1003,7 +1028,7 @@ footer h4
     .filter_list p
     {
         font-family: 'Raleway', sans-serif;
-        margin-right: 0px;
+        margin-right: 15px;
         margin-left: 0px;
         padding-right: 25px;
         
@@ -1022,7 +1047,7 @@ footer h4
     {
         flex-direction: column-reverse;
         align-items: center;
-        width: 80%;
+        width: 100%;
     }
 
     .bloc_housing
@@ -1243,7 +1268,7 @@ footer h4
 
     .section_link
     {
-        width: 100%;
+        width: 90%;
         margin-top: 1.5em;
         margin-bottom: 1.5em;
         font-size: 2em;
@@ -1256,7 +1281,7 @@ footer h4
         flex-direction: column;
         align-items: center;
         margin: auto;
-        width: 100%;
+        width: 95%;
         border: 5px solid rebeccapurple;
     }
 
@@ -1360,7 +1385,7 @@ footer h4
     .filter_list p
     {
         font-family: 'Raleway', sans-serif;
-        margin-right: 15px;
+        margin-right: 10px;
         margin-left: 0px;
         padding-right: 25px;
         padding-bottom: 2px;
@@ -1378,7 +1403,7 @@ footer h4
     {
         flex-direction: column-reverse;
         align-items: center;
-        width: 100%;
+        width: 95%;
     }
 
     .bloc_housing
@@ -1421,7 +1446,7 @@ footer h4
 
     .popular
     {
-        width: 100%;
+        width: 80%;
     }
 
     .bloc_popular
@@ -1429,7 +1454,7 @@ footer h4
         align-items: center;
         background-color: #F2F2F2;
         padding-top: 0.5em;
-        width: 95%;
+        width: 100%;
     }
 
     .bloc_popular h3
@@ -1546,7 +1571,7 @@ footer h4
         display: flex;
         flex-direction: column;
         padding-left: 1.5em;
-        width: 90%;
+        width: 100%;
     }
     
     footer h4
