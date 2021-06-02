@@ -37,7 +37,7 @@ header img
     width: 8em;
     padding-top: 1em;
     font-size: 1em;
-    margin-right: 45em;
+    margin-right: 50.5em;
 }
 
 nav
@@ -97,7 +97,13 @@ nav a:hover
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-left: -27em;
+    border: 5px solid greenyellow;
+}
+
+.bloc_filter
+{
+    border: 5px solid brown;
+    padding-right: 30em;
 }
 
 .bloc__contentFilter h3
@@ -105,10 +111,13 @@ nav a:hover
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     font-size: 1.3em;
+    margin-right: 10px;
 }
 
 .bloc__contentFilter h5
 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
     font-size: 1em;
     margin-top: -.7em;
 }
@@ -171,14 +180,15 @@ form input[value="Rechercher"]
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+    border: 5px solid red;
 }
 
 .filter_list
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .filter_list p
@@ -205,15 +215,15 @@ form input[value="Rechercher"]
 
 #money
 {
-   padding-left: -1em;
    border: 5px #DEEBFF;
 }
 
 .bloc_filter_list h4
 {
-    margin-top: 1.2em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
     font-size: 1.1em;
-    margin-left: -1px;
+    border: 5px solid navajowhite;
 }
 
 .filter_list a
@@ -228,17 +238,9 @@ form input[value="Rechercher"]
     background-color: #F2F2F2;
 }
 
-h4
+.bloc_filter_list h4
 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    margin: 15px;
-    padding-top: 10px;
-}
 
-.housing p
-{
-    font-size: 1.5em;
 }
 
 .icon_info i
@@ -256,6 +258,7 @@ section
     display: flex;
     flex-direction: row;
     justify-content: center;
+    border: 5px solid rgb(0, 98, 128);
 }
 
 .bloc_housing
@@ -265,12 +268,23 @@ section
     background-color: #F2F2F2;
     border-radius: 15px;
     margin-right: 2em;
+    border: 5px solid green;
 }
 
 .bloc_housing h3
 {
-    padding-top: 1.5em;
-    padding-left: 1.5em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    padding-left: 1.8em;
+    font-size: 1.5em;
+    border: 5px solid aqua;
+}
+
+.bloc_housing h4
+{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    padding-left: 1.8em;
     font-size: 1.5em;
 }
 
@@ -291,10 +305,10 @@ section
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding-top: 0.5em;
-    padding-left: 2.3em;
-    padding-right: 2.3em;
-    padding-bottom: 2.3em;
+    padding-left: .8em;
+    padding-right: .8em;
+    padding-bottom: .5em;
+    border: 5px solid red;
 }
 
 .card_housing a, .card_populaires a, .bloc_marseille a, .card_popular a
@@ -318,7 +332,9 @@ section
 
 .card_housing
 {
-    margin: 1em;
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+    border: 5px solid rgb(127, 150, 255);
 }
 
 .card_housing img
@@ -337,7 +353,7 @@ section
     width: 235px;
     background-color: white;
     border-radius: 15px;
-    box-shadow: 0.05px 0.05px 15px black;
+    box-shadow: 0px 5px 15px rgb(146, 142, 142);
 }
 
 .card_text p
@@ -380,27 +396,32 @@ section
     display: flex;
     flex-direction: column;
     border-radius: 15px;
+    border: 5px solid blueviolet;
 }
 
 .bloc_popular h3
 {
-    margin-top: 2.5em;
-    margin-bottom: 1.8em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    margin-top: .5em;
     font-size: 1.5em;
+    border: 5px solid rgb(101, 208, 216);
 }
 
 .popular
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    border: 5px solid rgb(196, 221, 52);
 }
 
 .popular p
 {
     font-size: 2em;
     margin-left: 2em;
-    margin-top: 1.5em;
+    margin-top: -.2em;
+    border: 5px solid rebeccapurple;
 }
 
 .card_popular img
@@ -427,7 +448,7 @@ section
     width: 345px;
     background-color: white;
     border-radius: 15px;
-    box-shadow: 0px 0px 15px black;
+    box-shadow: 0px 5px 15px rgb(146, 142, 142);
 }
 
 .card_text_pi img
@@ -437,23 +458,28 @@ section
 
 .bloc_activites
 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
+    border: 5px solid firebrick;
 }
 
 .bloc_activites h3
 {
     font-size: 1.9em;
-    margin-left: -30em;
+    padding-right: 35em;
+    border: 5px solid fuchsia;
 }
 
 .bloc_marseille
 {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    margin-left: 0px;
+    border: 5px solid rgb(130, 238, 148);
 }
 
 .card_t_activ
@@ -466,10 +492,10 @@ section
 .card_a
 {
     width: 300px;
-    height: 444px;
+    height: 454px;
     border-radius: 15px;
-    box-shadow: 0px 0px 15px black;
-    margin: 2em;
+    box-shadow: 0px 5px 15px rgb(146, 142, 142);
+    margin: 0em;
 }
 
 .card_a img
@@ -486,16 +512,19 @@ section
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-top: -1em;
+    margin-top: 0em;
 }
 
 .card_pomegues
 {
     width: 300px;
     height: 236px;
+    margin-left: 3.5em;
+    margin-right: 3.5em;
+    margin-bottom: 2em;
     border-radius: 15px;
     border-radius: 15px;
-    box-shadow: 0px 0px 15px black;
+    box-shadow: 0px 5px 15px rgb(146, 142, 142);
 }
 
 .card_pomegues img
@@ -511,8 +540,10 @@ section
 {
     width: 300px;
     height: 166px;
+    margin-left: 3.5em;
+    margin-right: 3.5em;
     border-radius: 15px;
-    box-shadow: 0px 0px 15px black;
+    box-shadow: 0px 5px 15px rgb(146, 142, 142);
 }
 
 .card_frioul img
@@ -529,8 +560,10 @@ section
 {
     width: 300px;
     height: 195px;
+    margin-left: 3.5em;
+    margin-bottom: 2em;
     border-radius: 15px;
-    box-shadow: 0px 0px 15px black;
+    box-shadow: 0px 5px 15px rgb(146, 142, 142);
 }
 
 .card_notre_dame img
@@ -546,8 +579,9 @@ section
 {
     width: 300px;
     height: 210px;
+    margin-left: 3.5em;
     border-radius: 15px;
-    box-shadow: 0.5px 0.5px 15px black;
+    box-shadow: 0px 5px 15px rgb(146, 142, 142);
 }
 
 .card_longchamp img
@@ -563,12 +597,24 @@ footer
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     margin-right: auto;
     background-color: #F2F2F2;
     margin-top: 50px;
+    padding-left: 18em;
+    border: 5px solid yellow;
 }
 
+.apropos, .nos_hebergements, .contact
+{
+    flex-basis: 28%;
+
+}
+
+footer h4
+{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
 .contact a
 {
     text-decoration: none;
@@ -577,7 +623,7 @@ footer
 
 /* responsive desktop */
 
-@media screen and (max-width: 1280px)
+@media screen and (max-width: 1300px)
 {
     header img
     {
@@ -593,9 +639,13 @@ footer
     .bloc__contentFilter
     {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
-        margin-left: -2em;
+    }
+
+    .bloc_filter
+    {
+        padding-right: 0em;
     }
 
     section
@@ -611,7 +661,14 @@ footer
 
     .bloc_housing h3
     {
-        font-size: 2em;
+        font-size: 2.5em;
+        padding-left: 1em;
+    }
+
+    .bloc_housing h4
+    {
+        padding-left: 1.9em;
+        font-size: 1.5em;
     }
 
     .bloc_1_housing
@@ -622,22 +679,48 @@ footer
 
     .bloc_popular
     {
-        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0em;
+    }
+        
+    .bloc_popular h3
+    {
+        font-size: 2.5em;
+    }
+
+    .popular
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .popular p
+    {
+        margin-top: .45em;
     }
     
     .bloc_activites h3
     {
-        margin-left: -16em;
-    }
-    .bloc_popular h3
-    {
-        font-size: 2em;
+        padding-right: 11.5em;
+        font-size: 2.5em;
     }
 
     .card_p, .card_h
     {
         width: 837.5px;
         height: 362.5px;
+        margin-left: 0em;
+        margin-right: 0em;
+    }
+
+    .card_h
+    {
+
+        margin-bottom: 2em;
     }
     
     .card_popular img
@@ -698,6 +781,8 @@ footer
     {
         width: 837.5px;
         height: 380px;
+        margin-left: 0em;
+        margin-right: 0em;
         margin-bottom: 3em;
     }
 
@@ -712,8 +797,9 @@ footer
     footer
     {
         display: flex;
-        flex-direction: row;
-        margin: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 6em;
         margin-top: 3em;
     }
 
@@ -725,7 +811,6 @@ footer
     footer p
     {
         font-size: 1.3em;
-        padding-left: .8em;
     }
 
 }
@@ -740,6 +825,13 @@ footer
         margin: auto;
     }
 
+    .bloc_page
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     header
     {
         display: flex;
@@ -750,7 +842,7 @@ footer
     header img
     {
         position: absolute;
-        left: 2.5em;
+        left: 4.2em;
         width: 9em;
         top: .5em;
     }
@@ -759,7 +851,7 @@ footer
     {
         position: absolute;
         top: 2em;
-        right: 1.5em;
+        right: 2.5em;
         font-size: 1.5em;
     }
 
@@ -817,13 +909,21 @@ footer
     {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        margin-left: 3.7em;
+        align-items: center;
+        margin: auto;
+        width: 80%;
+        border: 5px solid rebeccapurple;
     }
 
     .bloc__contentFilter h3
     {
         font-size: 2em;
+        border: 5px solid yellowgreen;
+    }
+
+    form
+    {
+        border: 5px solid goldenrod;
     }
 
     form input[value="Rechercher"]
@@ -867,7 +967,8 @@ footer
     .bloc_filter_list h4
     {
         font-size: 1.5em;
-        padding-left: .5em;
+        padding-left: 0em;
+        border: 5px solid violet;
     }
 
     .bloc_filter_list
@@ -875,6 +976,7 @@ footer
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        border: 5px solid orange;
     }
 
     .filter_list
@@ -882,14 +984,16 @@ footer
         display: flex;
         flex-wrap: wrap;
         font-size: 1.5em;
-        margin-left: -40px;
+        width: 100%;
+        border: 5px solid wheat;
+        margin-left: 0px;
     }
 
     .filter_list i
     {
         color: blue;
         background-color: #DEEBFF;
-        border: 5px #DEEBFF;
+        border: 5px solid #DEEBFF;
         padding: 25px;
         border-radius: 25px;
         margin-right: 10px;
@@ -898,12 +1002,18 @@ footer
         width: 15px;
     }
 
+    #money
+    {
+        padding: 30px;
+    }
+
     .filter_list p
     {
         font-family: 'Raleway', sans-serif;
-        margin-right: 20px;
+        margin-right: 0px;
+        margin-left: 0px;
         padding-right: 25px;
-        padding-top: -10px;
+        
         padding-bottom: 2px;
         border: 3px solid #d9d9d9;
         border-radius: 40px;
@@ -912,18 +1022,37 @@ footer
     .icon_info, .bloc_filter h5
     {
         font-size: 1.8em;
+        border: 5px solid rebeccapurple;
     }
 
     section
     {
         flex-direction: column-reverse;
-        width: 100%;
+        align-items: center;
+        width: 80%;
     }
 
     .bloc_housing
     {
         align-items: center;
         background-color: transparent;
+        margin-left: 0em;
+        margin-right: 0em;
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+
+    #hebergements
+    {
+        padding-left: 0em;
+        margin-right: 1.2em;
+    }
+
+    #show_more
+    {
+        padding-left: 0em;
+        margin-right: 17.5em;
+        border: 5px solid orange;
     }
 
     .bloc_1_housing
@@ -931,6 +1060,10 @@ footer
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-left: 0em;
+        margin-right: 0em;
+        padding-left: 0em;
+        padding-right: 0em;
         
     }
 
@@ -939,18 +1072,31 @@ footer
         align-items: center;
         background-color: #F2F2F2;
         padding-top: 0.5em;
+        width: 100%;
         
+    }
+
+    .bloc_activites
+    {
+        margin-left: 0em;
+        margin-right: 0em;
+        padding-left: 0em;
+        padding-right: 0em;
     }
 
     .bloc_activites h3
     {
-        margin-left: -8em;
+        padding-right: 4.5em;
     }
 
     .card_p, .card_h
     {
         width: 565px;
         height: 272px;
+        margin-left: 0em;
+        margin-right: 0em;
+        padding-left: 0em;
+        padding-right: 0em;
     }
 
     .card_popular img
@@ -1000,6 +1146,8 @@ footer
     {
         width: 565px;
         height: 285px;
+        margin-left: 0em;
+        margin-right: 0em;
         margin-bottom: 3em;
     }
 
@@ -1014,25 +1162,23 @@ footer
     {
         display: flex;
         flex-direction: column;
-        padding-left: 3em;
-        width: 100%;
+        padding-left: 6em;
+        width: 85%;
     }
     
     footer h4
     {
-        margin-left: -.1em;
         font-size: 2em;
     }
 
     footer p
     {
         font-size: 1.3em;
-        margin-left: -1em;
     }
 } 
 
 /* Iphone */
-/*
+
 @media screen and (max-width: 480px)
 {
     header
