@@ -29,6 +29,55 @@
             </ul>
          </nav>
       </header>
+         <div class="bloc__contentFilter">
+            <div class="bloc_filter">
+               <div>
+                  <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
+                  <h5>En plein centre ville ou en pleine nature</h5>
+               </div>
+               <div>
+                  <form method="POST" action="traitement.php">
+                     <label for="destination" class="map">
+                     <i class="fas fa-map-marker-alt"></i>
+                     </label>
+                     <input type="search" name="destination" id="destination" placeholder="Marseille, France"
+                        size="20%" />
+                     <!-- type="submit"  à integrer quand le bouton enverra les formulaires-->
+                     <input value="Rechercher" size="11%" />
+                     <label class="search">
+                     <i class="fas fa-search"></i>
+                     </label>
+                  </form>
+               </div>
+               <div class="bloc_filter_list">
+                  <h4>Filtres</h4>
+                  <div class="filter_list">
+                     <p>
+                        <i id="money" class="fas fa-money-bill-wave"></i>
+                        <a href="#">Économiques</a>
+                     </p>
+                     <p>
+                        <i class="fas fa-child"></i>
+                        <a href="#">Familial</a>
+                     </p>
+                     <p>
+                        <i class="fas fa-heart"></i>
+                        <a href="#">Romantique</a>
+                     </p>
+                     <p>
+                        <i class="fas fa-dog"></i>
+                        <a href="#">Animaux autorisés</a>
+                     </p>
+                  </div>
+               </div>
+               <div class="icon_info">
+                  <p>
+                     <i class="fas fa-info-circle"></i>
+                     Plus de 500 logements sont diponibles dans cette ville
+                  </p>
+               </div>
+            </div>
+         </div>
       <script src="https://kit.fontawesome.com/b24278cb9e.js" crossorigin="anonymous"></script>
    </body>
 </html>
