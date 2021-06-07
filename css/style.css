@@ -538,6 +538,32 @@ section {
     justify-content: space-between;
 }
 
+footer {
+	display: flex;
+	flex-direction: row;
+	background-color: #F2F2F2;
+	margin-top: 50px;
+}
+.apropos {
+    padding-left: 1%;
+}
+.apropos {
+	padding-right: 16%;
+}
+.nos_hebergements {
+	padding-right: 20%;
+}
+
+footer h4 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+}
+
+.contact a {
+	text-decoration: none;
+	color: black;
+}
+
 
 
 /* responsive desktop */
@@ -615,16 +641,24 @@ section {
 	}
 
 	.bloc_activites_laptop {
-		width: 100%;
 		margin-bottom: 30px;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 	}
 	
-	.bloc_marseille {
-		display: flex;
-		flex-direction: column;
+
+	footer {
+		margin-top: 30px;
+	}
+
+	.apropos {
+		padding-left: .8%;
+		padding-right: 10%;
+	}
+
+	.nos_hebergements {
+		padding-right: 15%;
 	}
 }
 
@@ -850,6 +884,29 @@ section {
 	.bloc_activites {
 		width: 95%;
 	}
+
+	.bloc_marseille {
+		flex-direction: column;
+
+	}
+
+	.bloc_activites_laptop {
+		width: 100%;
+	}
+
+	footer {
+		margin-top: 30px;
+	}
+
+	.apropos {
+		padding-left: 2%;
+		padding-right: 10%;
+	}
+
+	.nos_hebergements {
+		padding-right: 13%;
+	}
+
 }
 
 /* responsive mobile phone */
@@ -1025,5 +1082,17 @@ section {
 	.bloc_activites h3 {
 		width: 87%;
 	}
-	
+
+	footer {
+		margin-top: 30px;
+		flex-direction: column;
+	}
+
+	.apropos,
+	.contact,
+	.nos_hebergements {
+		padding-left: 8%;
+		padding-right: 0%;
+	}
+
 }
