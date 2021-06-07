@@ -269,10 +269,10 @@ section {
 /* Les cartes */
 
 .card_housing {
-    border: 5px solid rgb(255, 187, 0);
     width: 30%;
     height: 230px;
     border-radius: 20px;
+	box-shadow: 0px 5px 15px rgb(146, 142, 142);
 }
 
 .card_h {
@@ -296,13 +296,13 @@ section {
     display: flex;
     flex-direction: row;
     border-radius: 25px;
-    border: 5px solid rgb(0, 247, 255);
     width: 87%;
     height: 200px;
     margin-bottom: 30px;
     margin-left: 30px;
     margin-right: 30px;
     background-color: white;
+	box-shadow: 0px 5px 15px rgb(146, 142, 142);
 }
 
 /*  Images bloc hébergements */
@@ -408,6 +408,136 @@ section {
     background-position: 100%;
 }
 
+/*  Images bloc activites */
+
+.activites_picture_vieuxPort {
+    width: 100%;
+    height: 456px;
+    background-image: url("images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    background-size: cover;
+    background-position: 80%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.activites_picture_pomegues {
+    width: 100%;
+    height: 230px;
+    background-image: url("images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    background-size: cover;
+    background-position: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;;
+}
+
+.activites_picture_frioul {
+    width: 100%;
+    height: 134px;
+    background-image: url("images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    background-size: cover;
+    background-position: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.activites_picture_parcNationalDeCalanques {
+    width: 100%;
+    height: 456px;
+    background-image: url("images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    background-size: cover;
+    background-position: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.activites_picture_notreDameDeLaGarde {
+    width: 100%;
+    height: 170px;
+    background-image: url("images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    background-size: cover;
+    background-position: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;;
+}
+
+.activites_picture_parcLongchamp {
+    width: 100%;
+    height: 170px;
+    background-image: url("images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    background-size: cover;
+    background-position: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card_a {
+    width: 46%;
+    background-color: white;
+    border-radius: 15px;
+	box-shadow: 0px 5px 15px rgb(146, 142, 142);
+}
+
+.card_b {
+    width: 46%;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    background-color: white;
+}
+
+.card_notreDame {
+    height: 240px;
+    border-radius: 15px;
+	box-shadow: 0px 5px 15px rgb(146, 142, 142);
+}
+.card_longchamp {
+    height: 240px;
+    margin-top: 30px;
+    border-radius: 15px;
+	box-shadow: 0px 5px 15px rgb(146, 142, 142);
+}
+
+.card_pomegues {
+    height: 280px;
+    border-radius: 15px;
+	box-shadow: 0px 5px 15px rgb(146, 142, 142);
+}
+
+.card_frioul {
+    height: 200px;
+    margin-top: 30px;
+    border-radius: 15px;
+	box-shadow: 0px 5px 15px rgb(146, 142, 142);
+}
+
+.bloc_activites {
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+}
+
+.bloc_activites h3 {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 30px;
+	font-size: 1.9em;
+}
+
+.bloc_activites_laptop {
+	width: 48%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.bloc_marseille {
+	display: flex;
+	flex-direction: row;
+    justify-content: space-between;
+}
+
 
 
 /* responsive desktop */
@@ -482,6 +612,19 @@ section {
 		height: 230px;
 		border-radius: 20px;
 		margin-bottom: 0px;
+	}
+
+	.bloc_activites_laptop {
+		width: 100%;
+		margin-bottom: 30px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	
+	.bloc_marseille {
+		display: flex;
+		flex-direction: column;
 	}
 }
 
@@ -703,6 +846,10 @@ section {
 		border-radius: 20px;
 		margin-bottom: 30px;
 	}
+
+	.bloc_activites {
+		width: 95%;
+	}
 }
 
 /* responsive mobile phone */
@@ -831,6 +978,52 @@ section {
 		height: 200px;
 		border-radius: 20px;
 		margin-bottom: 30px;
+	}
+
+	.bloc_activites {
+		width: 100%;
+	}
+
+	.bloc_activites_laptop {
+		display: flex;
+		flex-direction: column;
+		width: 87%;
+		margin: auto;
+		margin-bottom: 30px;
+	}
+
+	 .activites_picture_vieuxPort,
+	 .activites_picture_pomegues,
+	 .activites_picture_frioul,
+	 .activites_picture_parcNationalDeCalanques,
+	 .activites_picture_notreDameDeLaGarde,
+	 .activites_picture_parcLongchamp {
+		height: 150px;
+	}
+	
+	.card_a {
+		width: 100%;
+		height: 200px;
+		margin-bottom: 30px;
+	}
+	
+	.card_b {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: space-between;
+		background-color: white;
+	}
+
+	.card_notreDame,
+	.card_longchamp,
+	.card_pomegues,
+	.card_frioul {
+		height: 200px;
+	}
+
+	.bloc_activites h3 {
+		width: 87%;
 	}
 	
 }
