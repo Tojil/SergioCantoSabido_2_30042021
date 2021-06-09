@@ -922,7 +922,7 @@
 	  font-size: 1.5em;
 	}
 	.card_t_activ {
-	  font-size: 1.5em;
+	  font-size: 1.2em;
 	}
 	.text_night {
 	  margin-left: 20px;
@@ -939,7 +939,15 @@
 	.stars_h {
 	  margin-left: 20px;
 	}
+
 	/* Bloc Popular */
+	.popular {
+		margin-left: 2.5em;
+		width: 89%;
+	}
+	.bloc_housing h3 {
+		width:  87%;
+	}
 	.bloc_popular {
 	  display: flex;
 	  flex-direction: column;
@@ -1166,6 +1174,13 @@
 	  height: auto;
 	  width: 40%;
 	}
+	.popular {
+		margin-left: 1.5em;
+		width: 89%;
+	}
+	.bloc_housing h3 {
+		width:  87%;
+	}
 	.bloc_housing {
 	  display: flex;
 	  flex-direction: column;
@@ -1195,7 +1210,6 @@
 	  flex-direction: column;
 	  width: 87%;
 	  margin: auto;
-	  margin-bottom: 30px;
 	}
 	.activites_picture_vieuxPort,
 	.activites_picture_pomegues,
