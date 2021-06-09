@@ -292,11 +292,13 @@
 	font-size: 1.5em;
   }
   
-  .bloc_housing h4 {
+  #show_more {
 	font-family: 'Raleway', sans-serif;
 	font-weight: bold;
 	padding-left: 1.8em;
 	font-size: 1.5em;
+	margin-top: .3em;
+	margin-bottom: 2.5em;
   }
   
   .text_night {
@@ -322,6 +324,13 @@
 	margin-left: 20px;
 	font-size: 1.1em;
   }
+
+    /*  L'euro € */
+  
+	b {
+		font-family: 'Releway', sans-serif;
+		font-weight: bold;
+	}
   
   /* Les etoiles */
   
@@ -1110,7 +1119,7 @@
 	.bloc_housing h3 {
 	  width: 85%;
 	}
-	.bloc_housing h4 {
+	#show_more {
 	  padding-left: 1.2em;
 	}
 	.bloc_activites h3 {
