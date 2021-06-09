@@ -316,6 +316,14 @@
   .card_text_p {
 	margin-left: 20px;
   }
+
+  .card_text_p .text_bold {
+	  width: 100%;
+  }
+
+  .card_text_p .text_night {
+	  margin-top: -10px;
+}
   
   .card_t_activ {
 	font-family: 'Raleway', sans-serif;
@@ -341,7 +349,7 @@
   
   .stars_p {
 	font-size: 12px;
-	margin-top: 40px;
+	margin-top: 45px;
   }
   
   #grey_star_housing_1,
@@ -1227,5 +1235,20 @@
 	  padding-left: 8%;
 	  padding-right: 0%;
 	}
+  }
+/*  tels mob320 */
+  @media screen and (max-width: 340px) {
+	.card_text_p {
+		margin-left: 0px;
+	  }
+	
+	  .card_text_p .text_bold {
+		  width: 100%;
+		  font-size: 1em;
+	  }
+
+	  ;.card_text_p .text_night {
+		  font-size: .7em;
+	  }
   }
   
