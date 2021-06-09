@@ -1070,6 +1070,7 @@
 	.bloc_filter_list > p {
 		margin-block-start: 1.5em;
 		margin-block-end: .1em;
+		font-size: 1.2em;
 	}
 	form {
 	  margin-left: 1em;
