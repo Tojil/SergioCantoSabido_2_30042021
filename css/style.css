@@ -85,13 +85,13 @@
 	margin: auto;
   }
   
-  .bloc__contentFilter .h3 {
+  .bloc__contentFilter .trouvez {
 	font-family: 'Raleway', sans-serif;
 	font-weight: bold;
 	font-size: 1.3em;
   }
   
-  .bloc__contentFilter .h5 {
+  .bloc__contentFilter .EnPlein {
 	font-weight: bold;
 	font-size: 1em;
 	margin-top: -1em;
@@ -1074,12 +1074,13 @@
 	  flex-direction: column;
 	  margin-left: 0px;
 	}
-	.bloc__contentFilter .h3 {
+	.bloc__contentFilter .trouvez {
 	  font-size: 1.5em;
 	  padding-left: .7em;
+	  margin-top: 0.5em;
 	}
-	.bloc__contentFilter .h5 {
-	  font-size: 1.3em;
+	.bloc__contentFilter .EnPlein {
+	  font-size: 1.1em;
 	  margin-left: .9em;
 	}
 	form {
