@@ -72,7 +72,7 @@
 	font-family: 'Raleway', sans-serif;
 	font-weight: bold;
 	color: #0065FC;
-	font-size: 1.2em;
+	font-size: 1em;
 	padding-left: 2em;
 	padding-right: .5em;
 	text-decoration: none;
@@ -123,7 +123,7 @@
 	color: black;
   }
   
-  form input[value="Rechercher"] {
+  form > span {
 	font-family: 'Raleway', sans-serif;
 	font-weight: bold;
 	font-size: 1.2em;
@@ -132,7 +132,7 @@
 	padding-left: 1em;
 	padding-top: 0.4em;
 	padding-bottom: 0.4em;
-	padding-right: 0.4em;
+	padding-right: 0.8em;
 	background-color: #0065FC;
 	border-top-right-radius: 15px;
 	border-bottom-right-radius: 15px;
@@ -813,6 +813,10 @@
 	nav a:hover {
 	  border-top: 0px;
 	}
+
+	nav a {
+		padding-right: 0em;
+	}
 	.bloc__contentFilter {
 	  display: flex;
 	  flex-direction: column;
@@ -821,7 +825,7 @@
 	.bloc__contentFilter h3 {
 	  font-size: 1.5em;
 	}
-	form input[value="Rechercher"] {
+	form > span {
 	  display: none;
 	}
 	form .search {
@@ -1014,9 +1018,6 @@
 	header img {
 	  margin-top: .15em;
 	  margin-left: 1.5em;
-	}
-	#register {
-	  right: 0px;
 	}
 	nav {
 	  width: 100%;
