@@ -287,7 +287,7 @@ section {
 }
 
 .text_night {
-	font-weight: lighter;
+	font-weight: bold;
 	color: black;
 }
 
@@ -1115,8 +1115,13 @@ footer h4 {
 		font-size: 1.1em;
 	}
 
-	.text_night {
+	.card_text .text_night {
 		font-size: 1em;
+		margin-top: -17px;
+	}
+
+	.card_text {
+		margin-top: -12px;
 	}
 
 	.card_text_p {
