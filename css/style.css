@@ -164,7 +164,7 @@ form input[value="Rechercher"] {
 }
 
 .filter_list i {
-	color: blue;
+	color: #0065FC;
 	background-color: #DEEBFF;
 	border: 5px #DEEBFF;
 	padding: 15px;
@@ -638,6 +638,10 @@ footer h4 {
 /* responsive desktop */
 
 @media screen and (max-width: 1024px) {
+	body {
+		overflow-y: visible;
+	}
+
 	section {
 		display: flex;
 		flex-direction: column-reverse;
