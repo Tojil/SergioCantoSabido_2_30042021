@@ -835,13 +835,13 @@
 	  display: initial;
 	  color: white;
 	  background-color: #0065FC;
-	  border-radius: 25px;
+	  border-radius: 15px;
 	  padding: .6em;
 	  margin-right: 1.5em;
 	}
 	.map {
-	  border-top-left-radius: 25px;
-	  border-bottom-left-radius: 25px;
+	  border-top-left-radius: 15px;
+	  border-bottom-left-radius: 15px;
 	}
 	form input[placeholder="Marseille, France"] {
 	  font-family: 'Raleway', sans-serif;
@@ -851,7 +851,7 @@
 	}
 	form label,
 	form input {
-	  font-size: 1.5em;
+	  font-size: 1em;
 	}
 	form i {
 	  font-size: 1em;
