@@ -81,17 +81,16 @@ nav a:hover {
 	margin: auto;
 }
 
-.bloc__contentFilter h3 {
+.bloc__contentFilter .h3 {
 	font-family: 'Raleway', sans-serif;
 	font-weight: bold;
 	font-size: 1.3em;
 }
 
-.bloc__contentFilter h5 {
-	font-family: 'Raleway', sans-serif;
-	font-weight: lighter;
+.bloc__contentFilter .h5 {
+	font-weight: bold;
 	font-size: 1em;
-	margin-top: -.7em;
+	margin-top: -1em;
 }
 
 form {
@@ -194,6 +193,10 @@ form input[value="Rechercher"] {
 
 .filter_list p:hover {
 	background-color: #F2F2F2;
+}
+
+.icon_info p {
+	font-weight: bold;
 }
 
 .icon_info i {
@@ -1072,11 +1075,11 @@ footer h4 {
 		flex-direction: column;
 		margin-left: 0px;
 	}
-	.bloc__contentFilter h3 {
+	.bloc__contentFilter .h3 {
 		font-size: 1.5em;
 		padding-left: .7em;
 	}
-	.bloc__contentFilter h5 {
+	.bloc__contentFilter .h5 {
 		font-size: 1.3em;
 		margin-left: .9em;
 	}
