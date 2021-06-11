@@ -289,14 +289,14 @@
 	font-family: 'Raleway', sans-serif;
 	font-weight: bold;
 	width: 100%;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 3px;
+	padding-bottom: 0px;
 	font-size: 1.5em;
  }
  
  .popular i {
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 12px;
+	padding-bottom: 0px;
 	font-size: 1.5em;
  }
  
