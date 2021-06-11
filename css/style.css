@@ -1274,4 +1274,8 @@
 	.card_text_p .text_night {
 	   font-size: .7em;
 	}
+	.card_t_activ {
+		margin-top: 8px;
+		font-size: 1em;
+	}
  }
