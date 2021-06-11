@@ -685,7 +685,7 @@
  
  /* responsive desktop */
  
- @media screen and (max-width: 1024px) {
+ @media screen and (max-width: 1380px) {
 	body {
 	   overflow-y: visible;
 	}
