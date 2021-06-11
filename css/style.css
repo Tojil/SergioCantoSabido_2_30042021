@@ -1128,9 +1128,10 @@
 	}
 	.card_text {
 	   margin-top: -12px;
+	   padding-left: 0px;
 	}
 	.card_text_p {
-	   margin-left: 10px;
+	   margin-left: 0px;
 	}
 	.card_text .text_night {
 	   margin-top: -16px;
